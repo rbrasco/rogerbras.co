@@ -1,5 +1,5 @@
 {
-  "homepage": "http://rbrasco.github.io/cv_page",
+  "homepage": "https://rbrasco.github.io/cv_page/",
   "name": "cv_page",
   "version": "0.1.0",
   "private": true,
@@ -32,6 +32,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.1.1"
+    "gh-pages": "^2.1.1",
+    "react-router-dom": "^5.1.2"
   }
 }
