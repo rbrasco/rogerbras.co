@@ -3,8 +3,10 @@ import React from 'react';
 const Homepage = (props) => {
 
   return (
-    <div className="homepage" id="homepage">
-      <p>Homepage</p>
+    <div className="page" id="homepage">
+      <div className="homepage">
+        Homepage
+      </div>
     </div>
   );
 

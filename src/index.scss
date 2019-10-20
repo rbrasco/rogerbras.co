@@ -1,5 +1,6 @@
-@import './components/index.css';
-@import './pages/index.css';
+@import './components/index.scss';
+@import './pages/index.scss';
+@import './App.scss';
 
 body {
   margin: 0;
@@ -15,6 +16,9 @@ code {
     monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 .header {
   position: fixed;
   top: 0;

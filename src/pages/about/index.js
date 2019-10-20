@@ -4,9 +4,11 @@ import Chart from '../../components/chart';
 const About = (props) => {
 
   return (
-    <div className="about" id="about">
-      <p>About me page</p>
-      <Chart />
+    <div className="page" id="about">
+      <div className="about">
+        <p>About me page</p>
+        <Chart />
+      </div>
     </div>
   );
 

@@ -1,9 +1,0 @@
-@import './homepage/style.css';
-@import './about/style.css';
-@import './portofolio/style.css';
-@import './experience/style.css';
-@import './contact/style.css';
-
-p {
-    margin-left: 4px;
-}
