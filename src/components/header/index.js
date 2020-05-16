@@ -1,9 +1,9 @@
 import React from 'react';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+import { Link, useLocation } from 'react-router-dom';
+import {paths} from "../../info";
 
-const writeTab = ({key, label, active = false}) => <div className={active ? "tab" : "tab shadow"} id={key}>
-{label}
+const writeTab = ({key, label, active = false}) => <div className={active ? "tab" : "tab shadow"} key={key}>
+<Link className="link" to={"/"+key}>{label}</Link>
 <div className={active ? "xBttn" : "xBttn shadow"}>X</div>
 </div>;
 
@@ -18,14 +18,16 @@ const path = ({key, label}) => <div className="path">
       </div>;
 
 const Header = (props) => {
-  const tabInfo = [{key: "homepage", label:"info.yml", "active": true}, {key: "aboutme", label:"personal.yml"}]
+  const location = useLocation().pathname.replace("/","");
+  const tabIndex = Object.keys(paths).map(key => key);
+  const tabInfo = Object.keys(paths).map(key => ( {"key": key, "label": paths[key], "active": location === key }))
+
   return (
     <div className="app__header">
       {tabBar(tabInfo)}
-      {path(tabInfo[0])}
+      {location === "" ? null: path(tabInfo[tabIndex.indexOf(location)])}
     </div>
   );
-
 };
 
 export default Header;

@@ -1,6 +1,5 @@
 .app__header {
     display: block;
-    //padding-top: 8px;
     margin-bottom: 8px;
     align-items: center;
     color: #f8f8f2;
@@ -12,11 +11,10 @@
     background: #44475A70;
     border-top: 1px solid #BD93F9;
     display: flex;
-    
     border-right: 1px solid #191A21;
-}
-.tab.shadow {
-    background-color: #21222C;
+    &.shadow {
+        background-color: #21222C;
+    }
 }
 .path {
     padding: 4px 10px 6px;
@@ -37,10 +35,14 @@
 .xBttn {
     margin-left: 15px;
     margin-right: 10px;
-}
-.xBttn.shadow {
-    color: transparent;
+    &.shadow {
+        color: transparent;
+    }
 }
 .tabBar{
     display: flex;
+}
+.link{
+    color:#f8f8f2;
+    text-decoration: none;
 }
