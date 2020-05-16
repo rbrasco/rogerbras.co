@@ -6,6 +6,7 @@
 }
 .line{
     display: flex;
+    margin-bottom: 1px;
 }
 .n_line{
     padding: 0px 10px;
@@ -14,16 +15,18 @@
 .key_text{
     color: #8be9fd;
 }.key_text.moved{
-    margin-left: 10px;
+    margin-left: 15px;
 }
 .label_text{
     color: #f1fa8c;
-}
-.label_text.moved{
-    margin-left: 10px;
+    margin-left: 3px;
 }
 .dots {
     color: #ff79c6;
     margin-right: 5px;
-    margin-left: 2px;
+    margin-left: 1px;
+}
+.dash{
+    color:  #ff79c6;
+    margin-right: 5px;
 }
