@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "rogerbras.co/static/css/main.99f3c7eb.chunk.css",
+    "main.css": "rogerbras.co/static/css/main.e2741711.chunk.css",
     "main.js": "rogerbras.co/static/js/main.c0694a75.chunk.js",
     "main.js.map": "rogerbras.co/static/js/main.c0694a75.chunk.js.map",
     "runtime-main.js": "rogerbras.co/static/js/runtime-main.30f0bb88.js",
@@ -8,14 +8,14 @@
     "static/js/2.2a000cbe.chunk.js": "rogerbras.co/static/js/2.2a000cbe.chunk.js",
     "static/js/2.2a000cbe.chunk.js.map": "rogerbras.co/static/js/2.2a000cbe.chunk.js.map",
     "index.html": "rogerbras.co/index.html",
-    "precache-manifest.df54d42624b738bc93c7db8153c8d4ea.js": "rogerbras.co/precache-manifest.df54d42624b738bc93c7db8153c8d4ea.js",
+    "precache-manifest.1f559daa1eb6ae11d662cadf00a72d07.js": "rogerbras.co/precache-manifest.1f559daa1eb6ae11d662cadf00a72d07.js",
     "service-worker.js": "rogerbras.co/service-worker.js",
-    "static/css/main.99f3c7eb.chunk.css.map": "rogerbras.co/static/css/main.99f3c7eb.chunk.css.map"
+    "static/css/main.e2741711.chunk.css.map": "rogerbras.co/static/css/main.e2741711.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.30f0bb88.js",
     "static/js/2.2a000cbe.chunk.js",
-    "static/css/main.99f3c7eb.chunk.css",
+    "static/css/main.e2741711.chunk.css",
     "static/js/main.c0694a75.chunk.js"
   ]
 }
