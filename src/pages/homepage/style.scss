@@ -1,9 +1,29 @@
 .homepage {
     /*width: 100%;*/
-    padding-top: 60px;
     height: 200px;
-    background-color: #e2e2e2;
-    border: 1px #bebebe solid;
-    border-radius: 4px;
     margin: 0.25em;
+    color: #f8f8f2;
+}
+.line{
+    display: flex;
+}
+.n_line{
+    padding: 0px 10px;
+    width: 20px;
+}
+.key_text{
+    color: #8be9fd;
+}.key_text.moved{
+    margin-left: 10px;
+}
+.label_text{
+    color: #f1fa8c;
+}
+.label_text.moved{
+    margin-left: 10px;
+}
+.dots {
+    color: #ff79c6;
+    margin-right: 5px;
+    margin-left: 2px;
 }

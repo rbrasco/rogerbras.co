@@ -3,11 +3,11 @@ import React from 'react';
 import Header from './components/header';
 import Starfield from './components/starfield';
 
-/* import Homepage from './pages/homepage';
+ import Homepage from './pages/homepage';
 import About from './pages/about';
 import Portofolio from './pages/portofolio';
 import Experience from './pages/experience';
-import Contact from './pages/contact';*/
+import Contact from './pages/contact';
 
 export default class App extends React.Component {
 
@@ -18,18 +18,9 @@ export default class App extends React.Component {
 
     return (
       <div className="main" >
-        <div className="header">
           <Header />
-        </div>
-        <Starfield n={10} />
 
-        {/* <div className="pagesContainer">
           <Homepage />
-          <About />
-          <Portofolio />
-          <Experience />
-          <Contact />
-    </div>*/}
       </div>
     );
 
