@@ -1,0 +1,23 @@
+.wBttns{
+    color: #f8f8f2;
+    background: #44475A70;
+    width: 600px;
+    height: fit-content;
+    display: flex;
+    font-size: 13px;
+}
+.wIcons{
+    cursor: pointer;
+    padding: 4px 6px;
+    &:hover{
+        background-color: #424450;
+    }
+    &.red {
+        &:hover{
+        background-color: #ff5555;
+        }
+    }
+}
+.wTitle{
+margin: auto;
+}

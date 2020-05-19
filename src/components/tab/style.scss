@@ -1,4 +1,4 @@
-.app__header {
+.tabComponent {
     display: block;
     margin-bottom: 8px;
     align-items: center;
@@ -22,8 +22,7 @@
     }
 }
 .xBttn {
-    margin-left: 15px;
-    height: 20px!important;
+    margin: auto 0px auto 15px;
     color: #f8f8f2;
     &.shadow {
         visibility: hidden;
@@ -54,6 +53,9 @@
     &:hover .xBttn{
         visibility: visible;
     }
+}
+.tabName{
+    margin: auto;
 }
 .tabBar{
     display: flex;
