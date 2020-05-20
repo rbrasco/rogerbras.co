@@ -16,13 +16,13 @@ export default class App extends React.Component {
     return (
       <Router>
         <StarSky />
-        <div className="window">
+        {/*<div className="window">
             <WButtons />
             <TabComponent />
             <Switch>
               {Object.keys(infos).map(key => <Route path={"/"+key}><PageCreator key={key} info={infos[key]}/></Route>)}
-            </Switch>
-    </div>
+    </Switch>
+    </div>*/}
       </Router>
     );
 
