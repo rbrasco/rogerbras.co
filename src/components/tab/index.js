@@ -7,7 +7,7 @@ const writeTab = ({key, label, active = false}) =>
 <Link className="link" key={label} to={"/"+key}>
   <button className={active ? "tab" : "tab shadow"}>
     <div className="tabName">{label}</div>
-    <CloseIcon className={active ? "xBttn" : "xBttn shadow"} fontSize="small"></CloseIcon>
+    <Link className="linkX" to={"/"}><CloseIcon className={active ? "xBttn" : "xBttn shadow"} fontSize="small"></CloseIcon></Link>
     </button>
   </Link>;
 
