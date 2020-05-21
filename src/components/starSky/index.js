@@ -8,14 +8,12 @@ const rI = (min, max)=> Math.floor(Math.random() * (max - min + 1) + min);
 const random = () => ({"x": rI(-width, width), "y": rI(-height, height), "z": rI(0, width)});
 
 const StarSky = () => {
-    const initialValue = {"x": 0, "y": 0, "z": 0};
     const speed = 1;
     let stars = {};
     const n = 2000;
     const range = Array(n).fill();
     range.forEach((_, i) => stars = {...stars, [`${i}`]: random()});
 
-  
     const show = (p5, i) => {
         p5.fill(255);
         p5.noStroke();
@@ -47,6 +45,5 @@ const StarSky = () => {
 
     return (<Sketch setup={setup} draw={draw}/>);
 }
-
 
 export default StarSky;
