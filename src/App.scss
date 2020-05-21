@@ -1,6 +1,7 @@
 .window {
-  position: relative;
-  top: 400px;
+  position: absolute;
+  left: calc(50vw - (600px / 2));
+  top: calc(20vw - (330px / 2));
   height: 330px;
   min-height: fit-content;
   margin: auto;
