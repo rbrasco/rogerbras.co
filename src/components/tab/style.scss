@@ -60,7 +60,11 @@
     display: flex;
     overflow: auto;
     overflow-y: hidden;
-
+    &:hover{
+        &::-webkit-scrollbar-thumb {
+            background: #424450;
+        }
+    }
     &::-webkit-scrollbar {
         height: 6px;
     }
