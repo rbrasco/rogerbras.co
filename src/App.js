@@ -5,6 +5,7 @@ import WButtons from './components/wButtons';
 import StarField from './components/starField';
 import PageCreator from './pages/pageCreator';
 import {dict} from './dictionary';
+import {isMobile} from 'react-device-detect';
 
 export default class App extends React.Component {
 
@@ -22,7 +23,7 @@ export default class App extends React.Component {
             {Object.keys(dict).map(key => <Route path={"/"+key} key={key}><PageCreator info={dict[key]}/></Route>)}
           </Switch>
         </div>
-        <StarField />
+        {isMobile? null : <StarField />}
       </Router>
     );
 

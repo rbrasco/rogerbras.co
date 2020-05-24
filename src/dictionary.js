@@ -8,7 +8,10 @@ const info = {
   "contact":{
     "instagram": "brascoroger",
     "mail": "brascoroger@gmail.com"
-  }
+  },
+  "codes2":["Reactjs", "JAVA", "C family", "Python"],
+  "codes3":["Reactjs", "JAVA", "C family", "Python"],
+  "codes4":["Reactjs", "JAVA", "C family", "Python"],
 };
 const personal = {
   "title": "ada",

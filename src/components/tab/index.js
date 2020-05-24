@@ -4,14 +4,13 @@ import {paths} from "../../dictionary";
 import CloseIcon from '@material-ui/icons/Close';
 
 const writeTab = ({key, label, active = false}) => <div className={active ? "tab" : "tab shadow"}>
-<Link className="link" key={key} to={"/"+key}>
-  <button className="tabBttn">
-    <div className="tabLabel">{label}</div>
+  <Link className="link" key={key} to={"/"+key}>
+    <button className="tabBttn">
+      <div className="tabLabel">{label}</div>
     </button>
   </Link>
   <Link className={active? "linkX" : "linkX dis"} to={"/"} ><CloseIcon className={active ? "xBttn" : "xBttn shadow"} fontSize="small"></CloseIcon></Link>
-  </div>
-  ;
+</div>;
 
 const tabBar = (tabs) => <div className="tabBar">
   {tabs.map(tab => writeTab(tab))}

@@ -1,12 +1,11 @@
 .tabComponent {
     display: block;
-    margin-bottom: 8px;
     align-items: center;
     color: #f8f8f2;
     background-color: #191A21;
 }
 .path {
-    padding: 4px 10px 6px;
+    padding: 0px 10px 6px;
     color: #6272A4;
     background: #44475A70;
     -webkit-box-shadow: 0 8px 6px -6px black;
@@ -57,10 +56,23 @@
     margin: auto;
 }
 .tabBar{
-
+    //height: 41px;
     display: flex;
     overflow: auto;
-overflow-y: hidden;
+    overflow-y: hidden;
+
+    &::-webkit-scrollbar {
+        height: 6px;
+    }
+    &::-webkit-scrollbar-track {
+        background: #2c2e3b;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: transparent;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: #424450;
+    }
 }
 .tabBttn{
     background-color: transparent;
@@ -84,21 +96,4 @@ overflow-y: hidden;
     }
 }
 
-::-webkit-scrollbar {
-    width: 10px;
-  }
   
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
