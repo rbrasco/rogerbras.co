@@ -11,7 +11,7 @@
     background: #44475A70;
     -webkit-box-shadow: 0 8px 6px -6px black;
 	   -moz-box-shadow: 0 8px 6px -6px black;
-            box-shadow: 0 8px 6px -6px black;
+            box-shadow: 0 8px 6px -6px black, -8px 5px 6px -6px black, 8px 5px 6px -6px black;
     display: flex;
 }
 .path_text{
@@ -39,7 +39,6 @@
     cursor: pointer;
 
     width: fit-content;
-    padding: 10px 10px;
     background: #44475A70;
     border-top: 1px solid #BD93F9;
     display: flex;
@@ -54,17 +53,52 @@
         visibility: visible;
     }
 }
-.tabName{
+.tabLabel{
     margin: auto;
 }
 .tabBar{
+
     display: flex;
+    overflow: auto;
+overflow-y: hidden;
+}
+.tabBttn{
+    background-color: transparent;
+    color: #f8f8f2;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-family: Consolas, 'Courier New', monospace;
+    cursor: pointer;
 }
 .link{
     color:#f8f8f2;
     text-decoration: none;
+    padding: 10px 10px;
 }
 .linkX{
     display: flex;
-    margin: auto 0px auto 15px;
+    margin: auto 5px auto 0px;
+    &.dis{
+        pointer-events: none;
+    }
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

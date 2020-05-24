@@ -1,18 +1,17 @@
 import React from 'react';
 import Sketch from 'react-p5';
 
-const width = document.body.clientWidth;
-const height = window.innerHeight;
-
 const rI = (min, max)=> Math.floor(Math.random() * (max - min + 1) + min);
-const random = () => ({"x": rI(-width, width), "y": rI(-height, height), "z": rI(0, width)});
+const random = (width, height) => ({"x": rI(-width, width), "y": rI(-height, height), "z": rI(0, width)});
 
-const StarSky = () => {
+const StarField = () => {
+    let width = document.body.clientWidth;
+    let height = window.innerHeight;
     const speed = 1;
     let stars = {};
     const n = 2000;
     const range = Array(n).fill();
-    range.forEach((_, i) => stars = {...stars, [`${i}`]: random()});
+    range.forEach((_, i) => stars = {...stars, [`${i}`]: random(width, height)});
 
     const show = (p5, i) => {
         p5.fill(255);
@@ -25,7 +24,7 @@ const StarSky = () => {
     const update =(p5, i) => {
         stars[i].z -= speed;
         if(stars[i].z < 1)
-            stars[i] = random();
+            stars[i] = random(width, height);
     }
 
     const setup = (p5, canvasParentRef) => {
@@ -33,6 +32,9 @@ const StarSky = () => {
     };
     
     const draw = p5 => {
+        width = document.body.clientWidth;
+        height = window.innerHeight;
+        p5.resizeCanvas(width, height, true);
         p5.background(0);
         p5.translate(width/2, height/2);
         for(let i=0; i<range.length; i++)
@@ -46,4 +48,4 @@ const StarSky = () => {
     return (<Sketch setup={setup} draw={draw}/>);
 }
 
-export default StarSky;
+export default StarField;

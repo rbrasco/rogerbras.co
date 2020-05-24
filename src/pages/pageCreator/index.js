@@ -16,10 +16,10 @@ const printLines = (info, i) => Object.keys(info).map((key) =>
   </div>  
 );
 
-const PageCreator = ({key, info}) => {
+const PageCreator = ({info}) => {
   let i=1;
   return (
-    <div className="page" key={key} >
+    <div className="page">
         {printLines(info, i)}
     </div>
   );
