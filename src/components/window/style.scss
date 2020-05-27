@@ -1,12 +1,16 @@
 .window {
-    position: absolute;
-    left: calc(50vw - (600px / 2));
-    top: calc(20vw - (330px / 2));
-    height: 330px;
-    min-height: fit-content;
-    margin: auto;
-    width: 600px;
-    padding-bottom: 30px;
+    position: fixed;
+    top: 4vh;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 60%;
+    min-width: 600px;
+    max-width: 900px;
+    height: 70vh;
+    min-height: 330px;
+    max-height: 450px;
     background-color: color(BG-light);
     border-bottom: 1px solid color(d-purple);
+    display: block;
 }
