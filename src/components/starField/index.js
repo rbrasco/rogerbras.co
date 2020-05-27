@@ -5,12 +5,13 @@ const rI = (min, max)=> Math.floor(Math.random() * (max - min + 1) + min);
 const random = (width, height) => ({"x": rI(-width, width), "y": rI(-height, height), "z": rI(0, width)});
 
 const StarField = () => {
-    let width = document.body.clientWidth;
     let height = window.innerHeight;
-    const speed = 1;
-    let stars = {};
+    let width = document.body.clientWidth;
+    const speed = 0.13;
+    const BG = '#090b14'
     const n = 2000;
     const range = Array(n).fill();
+    let stars = {};
     range.forEach((_, i) => stars = {...stars, [`${i}`]: random(width, height)});
 
     const show = (p5, i) => {
@@ -21,6 +22,7 @@ const StarField = () => {
         const r = p5.map(stars[i].z, 0, width, 6, 0);
         p5.ellipse(sx, sy, r, r);
     }
+
     const update =(p5, i) => {
         stars[i].z -= speed;
         if(stars[i].z < 1)
@@ -35,7 +37,7 @@ const StarField = () => {
         width = document.body.clientWidth;
         height = window.innerHeight;
         p5.resizeCanvas(width, height, true);
-        p5.background(0);
+        p5.background(BG);
         p5.translate(width/2, height/2);
         for(let i=0; i<range.length; i++)
         {

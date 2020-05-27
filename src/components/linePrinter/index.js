@@ -16,7 +16,7 @@ const printLines = (info, i) => Object.keys(info).map((key) =>
   </div>  
 );
 
-const PageCreator = ({info}) => {
+const LinePrinter = ({info}) => {
   let i=1;
   return (
     <div className="page">
@@ -25,4 +25,4 @@ const PageCreator = ({info}) => {
   );
 };
 
-export default PageCreator;
+export default LinePrinter;

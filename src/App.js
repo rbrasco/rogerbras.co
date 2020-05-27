@@ -1,9 +1,7 @@
 import React from 'react';
-import { Route, MemoryRouter as Router, Switch } from 'react-router-dom';
-import TabComponent from './components/tab';
-import WButtons from './components/wButtons';
+import {MemoryRouter as Router} from 'react-router-dom';
+import Window from './components/window';
 import StarField from './components/starField';
-import PageCreator from './pages/pageCreator';
 import {dict} from './dictionary';
 import {isMobile} from 'react-device-detect';
 
@@ -16,13 +14,7 @@ export default class App extends React.Component {
 
     return (
       <Router>
-        <div className="window">
-          <WButtons />
-          <TabComponent />
-          <Switch>
-            {Object.keys(dict).map(key => <Route path={"/"+key} key={key}><PageCreator info={dict[key]}/></Route>)}
-          </Switch>
-        </div>
+        <Window dict={dict} />
         {isMobile? null : <StarField />}
       </Router>
     );

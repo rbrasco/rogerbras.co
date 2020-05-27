@@ -1,0 +1,12 @@
+.window {
+    position: absolute;
+    left: calc(50vw - (600px / 2));
+    top: calc(20vw - (330px / 2));
+    height: 330px;
+    min-height: fit-content;
+    margin: auto;
+    width: 600px;
+    padding-bottom: 30px;
+    background-color: color(BG-light);
+    border-bottom: 1px solid color(d-purple);
+}

@@ -1,13 +1,13 @@
 .tabComponent {
     display: block;
     align-items: center;
-    color: #f8f8f2;
-    background-color: #191A21;
+    color: color(FG);
+    background-color: color(BG-darker);
 }
 .path {
     padding: 0px 10px 6px;
-    color: #6272A4;
-    background: #44475A70;
+    color: color(comment);
+    background: color(BG-lighter);
     -webkit-box-shadow: 0 8px 6px -6px black;
 	   -moz-box-shadow: 0 8px 6px -6px black;
             box-shadow: 0 8px 6px -6px black, -8px 5px 6px -6px black, 8px 5px 6px -6px black;
@@ -16,21 +16,21 @@
 .path_text{
     margin-right: 8px;
     &:hover{
-        color: #f8f8f2;
+        color: color(FG);
         cursor: pointer;
     }
 }
 .xBttn {
    // margin: auto 0px auto 15px;
-    color: #f8f8f2;
+    color: color(FG);
     &.shadow {
         visibility: hidden;
-        color: #6272A4;
+        color: color(comment);
     }
 }
 .tab{
     background-color: transparent;
-    color: #f8f8f2;
+    color: color(FG);
     border: none;
     outline: none;
     font-size: 15px;
@@ -38,13 +38,13 @@
     cursor: pointer;
 
     width: fit-content;
-    background: #44475A70;
-    border-top: 1px solid #BD93F9;
+    background: color(BG-lighter);
+    border-top: 1px solid color(d-purple);
     display: flex;
-    border-right: 1px solid #191A21;
+    border-right: 1px solid color(BG-darker);
     &.shadow {
-        background-color: #21222C;
-        color: #6272A4;
+        background-color: color(BG-dark);
+        color: color(comment);
         border-top: 1px solid transparent;
 
     }
@@ -62,25 +62,25 @@
     overflow-y: hidden;
     &:hover{
         &::-webkit-scrollbar-thumb {
-            background: #42445085;
+            background: color(hover-trns);
         }
     }
     &::-webkit-scrollbar {
         height: 6px;
     }
     &::-webkit-scrollbar-track {
-        background: #2c2e3b;
+        background: color(BG-light);
     }
     &::-webkit-scrollbar-thumb {
         background: transparent;
     }
     &::-webkit-scrollbar-thumb:hover {
-        background: #424450;
+        background: color(hover);
     }
 }
 .tabBttn{
     background-color: transparent;
-    color: #f8f8f2;
+    color: color(FG);
     border: none;
     outline: none;
     font-size: 15px;
@@ -88,7 +88,7 @@
     cursor: pointer;
 }
 .link{
-    color:#f8f8f2;
+    color:color(FG);
     text-decoration: none;
     padding: 10px 10px;
 }

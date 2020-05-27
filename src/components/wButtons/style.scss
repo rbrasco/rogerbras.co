@@ -1,6 +1,6 @@
 .wBttns{
-    color: #f8f8f2;
-    background: #44475A70;
+    color: color(FG);
+    background: color(BG-light);
     width: 600px;
     height: fit-content;
     display: flex;
@@ -10,11 +10,11 @@
     cursor: pointer;
     padding: 4px 6px;
     &:hover{
-        background-color: #424450;
+        background-color: color(hover);
     }
     &.red {
         &:hover{
-        background-color: #ff5555;
+        background-color: color(d-red);
         }
     }
 }

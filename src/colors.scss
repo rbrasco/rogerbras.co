@@ -1,0 +1,22 @@
+$color-palette: (
+        BG: #282A36,
+        FG: #F8F8F2,
+   comment: #6272A4,
+   d-black: #090b14,
+  d-purple: #BD93F9,
+     d-red: #ff5555,
+ BG-darker: #191A21,
+   BG-dark: #21222C,
+  BG-light: #2c2e3b,
+BG-lighter: #44475A70,
+hover-trns: #42445085,
+     hover: #424450,
+);
+
+@function color($keys) {
+    $value: $color-palette;
+    @each $key in $keys {
+    $value: map-get($value, $key);
+    }
+    @return $value;
+}
