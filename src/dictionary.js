@@ -36,7 +36,7 @@ const dict = {
 };
 
 const paths = {
-  "info": {"dir": "homepage", "key": "info", "label": "info.yml"},
+  "info": {"dir": "aboutme", "key": "info", "label": "info.yml"},
   "personal": {"dir": "aboutme", "key": "personal", "label": "personal.yml"},
   "teaching": {"dir": "teaching", "key": "teaching", "label": "teaching.yml"},
   "experience": {"dir": "aboutme", "key": "experience", "label": "experience.yml"},

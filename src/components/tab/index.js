@@ -3,8 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 import {paths} from "../../dictionary";
 import CloseIcon from '@material-ui/icons/Close';
 
-const writeTab = ({key, label, active = false}) => <div className={active ? "tab" : "tab shadow"}>
-  <Link className="link" key={key} to={"/"+key}>
+const writeTab = ({key, label, active = false}) => <div className={active ? "tab" : "tab shadow"} key={key}>
+  <Link className="link" to={"/"+key}>
     <button className="tabBttn">
       <div className="tabLabel">{label}</div>
     </button>
@@ -26,7 +26,7 @@ const TabComponent = (props) => {
   const location = useLocation().pathname.replace("/","");
   const tabIndex = Object.keys(paths).map(key => key);
   const tabInfo = Object.keys(paths).map(key => ( {...paths[key], "active": location === key }))
-
+  console.log(location);
   return (
     <div className="tabComponent">
       {tabBar(tabInfo)}
