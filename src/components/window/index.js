@@ -4,6 +4,7 @@ import TabComponent from './../tab';
 import WButtons from './../wButtons';
 import LinePrinter from './../linePrinter';
 import Homepage from './../homepage';
+
 const Window = ({dict}) =>
 <div className="window">
   <WButtons />

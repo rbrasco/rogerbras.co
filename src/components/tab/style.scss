@@ -4,13 +4,16 @@
     background-color: color(BG-darker);
 }
 .path {
-    padding: 0px 10px 6px;
+    padding: 6px 10px 6px;
     color: color(comment);
     background: color(BG-lighter);
     -webkit-box-shadow: 0 8px 6px -6px black;
 	   -moz-box-shadow: 0 8px 6px -6px black;
             box-shadow: 0 8px 6px -6px black, -8px 5px 6px -6px black, 8px 5px 6px -6px black;
     display: flex;
+    &.moved{
+        padding-top: 0px;
+    }
 }
 .path_text{
     margin-right: 8px;
