@@ -1,7 +1,9 @@
 .page {
-    height: calc(80vh - 108px);
+    position: relative;
+    width: 100%;
+    //height: calc(100% - 143px);
     min-height: 223px;
-    max-height: 343px;
+   // max-height: 343px;
     overflow: auto;
     overflow-x: hidden;
     padding-top: 8px;

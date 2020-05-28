@@ -2,6 +2,8 @@
     align-items: center;
     color: color(FG);
     background-color: color(BG-darker);
+    float: left;
+    width: 100%;
 }
 .path {
     padding: 6px 10px 6px;
@@ -35,7 +37,7 @@
     color: color(FG);
     border: none;
     outline: none;
-    font-size: 15px;
+    font-size: 1em;
     font-family: Consolas, 'Courier New', monospace;
     cursor: pointer;
 
@@ -85,7 +87,7 @@
     color: color(FG);
     border: none;
     outline: none;
-    font-size: 15px;
+    font-size: 1em;
     font-family: Consolas, 'Courier New', monospace;
     cursor: pointer;
 }

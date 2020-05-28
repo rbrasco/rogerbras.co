@@ -75,11 +75,11 @@ const dict = {
 };
 
 const paths = {
-  "info": {"dir": "about_me", "key": "info", "label": "info.yml"},
+  "info": {"dir": "about.me", "key": "info", "label": "info.yml"},
   "experience": {"dir": "work", "key": "experience", "label": "experience.yml"},
   "education": {"dir": "accomplishment", "key": "education", "label": "education.yml"},
   "teaching": {"dir": "teaching", "key": "teaching", "label": "teaching.yml"},
-  "contact": {"dir": "for_you", "key": "contact", "label": "contact.yml"},
+  "contact": {"dir": "for.you", "key": "contact", "label": "contact.yml"},
 };
 
 export {dict, paths};

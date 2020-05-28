@@ -7,7 +7,7 @@ const random = (width, height) => ({"x": rI(-width, width), "y": rI(-height, hei
 const StarField = () => {
     let height = window.innerHeight;
     let width = document.body.clientWidth;
-    const speed = 0.13;
+    const speed = 0.05;
     const BG = '#090b14'
     const n = 2000;
     const range = Array(n).fill();

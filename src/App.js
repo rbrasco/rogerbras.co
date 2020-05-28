@@ -14,7 +14,7 @@ export default class App extends React.Component {
 
     return (
       <Router>
-        <Window dict={dict} />
+        <Window dict={dict} isMobile={isMobile}/>
         {isMobile? null : <StarField />}
       </Router>
     );
