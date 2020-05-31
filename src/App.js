@@ -1,9 +1,9 @@
 import React from 'react';
-import {MemoryRouter as Router} from 'react-router-dom';
+import { MemoryRouter as Router } from 'react-router-dom';
 import Window from './components/window';
 import StarField from './components/starField';
-import {dict} from './dictionary';
-import {isMobile} from 'react-device-detect';
+import { dict } from './dictionary';
+import { isMobile } from 'react-device-detect';
 
 export default class App extends React.Component {
 
@@ -15,7 +15,7 @@ export default class App extends React.Component {
     return (
       <Router>
         <Window dict={dict} isMobile={isMobile}/>
-        {isMobile? null : <StarField />}
+        {isMobile ? null : <StarField />}
       </Router>
     );
 

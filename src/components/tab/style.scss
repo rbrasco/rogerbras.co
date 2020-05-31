@@ -6,7 +6,7 @@
     width: 100%;
 }
 .path {
-    padding: 6px 10px 6px;
+    padding: 0.4em 0.625em;
     color: color(comment);
     background: color(BG-lighter);
     -webkit-box-shadow: 0 8px 6px -6px black;
@@ -14,18 +14,18 @@
             box-shadow: 0 8px 6px -6px black, -8px 5px 6px -6px black, 8px 5px 6px -6px black;
     display: flex;
     &.moved{
-        padding-top: 0px;
+        padding-top: 0em;
     }
 }
 .path_text{
-    margin-right: 8px;
+    margin-right: 0.5em;
+    line-height: 1em;
     &:hover{
         color: color(FG);
         cursor: pointer;
     }
 }
 .xBttn {
-   // margin: auto 0px auto 15px;
     color: color(FG);
     &.shadow {
         visibility: hidden;
@@ -37,19 +37,19 @@
     color: color(FG);
     border: none;
     outline: none;
-    font-size: 1em;
+
     font-family: Consolas, 'Courier New', monospace;
     cursor: pointer;
 
     width: fit-content;
     background: color(BG-lighter);
-    border-top: 1px solid color(d-purple);
+    border-top: 0.0625em solid color(d-purple);
     display: flex;
-    border-right: 1px solid color(BG-darker);
+    border-right: 0.0625em solid color(BG-darker);
     &.shadow {
         background-color: color(BG-dark);
         color: color(comment);
-        border-top: 1px solid transparent;
+        border-top: 0.0625em solid transparent;
 
     }
     &:hover .xBttn{
@@ -60,7 +60,6 @@
     margin: auto;
 }
 .tabBar{
-    //height: 41px;
     display: flex;
     overflow: auto;
     overflow-y: hidden;
@@ -70,7 +69,7 @@
         }
     }
     &::-webkit-scrollbar {
-        height: 6px;
+        height: 0.4em;
     }
     &::-webkit-scrollbar-track {
         background: color(BG-light);
@@ -88,17 +87,19 @@
     border: none;
     outline: none;
     font-size: 1em;
+    padding: 0;
+    height: 1em;
     font-family: Consolas, 'Courier New', monospace;
     cursor: pointer;
 }
 .link{
     color:color(FG);
     text-decoration: none;
-    padding: 10px 10px;
+    padding: 0.625em;
 }
 .linkX{
     display: flex;
-    margin: auto 5px auto 0px;
+    margin: auto 0.3125em auto 0;
     &.dis{
         pointer-events: none;
     }

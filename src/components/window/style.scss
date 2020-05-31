@@ -1,19 +1,19 @@
 .window {
     position: absolute;
-    height: 99.6%;
+    height: 100%;
         width: 100%;
     top:0;
     right: 0;
     left:0;
     margin: 0 auto;
     width: 65%;
-    min-width: 600px;
-    max-width: 950px;
+    min-width: 35em;
+    max-width: 60em;
     height: 80vh;
-    min-height: 330px;
-    max-height: 450px;
+    min-height: 20.625em;
+    max-height: 28.125em;
     background-color: color(BG-light);
-    border-bottom: 1px solid color(d-purple);
+    border-bottom: 0.0625em solid color(d-purple);
     display: block;
 }
 .mobile{
@@ -23,7 +23,7 @@
         right: 0;
         position: absolute;
     background-color: color(BG-light);
-    border-bottom: 4px solid color(d-purple);
+    border-bottom: 0.25em solid color(d-purple);
     display: block;
-    font-size: 30px;
+    font-size: 35px;
 }
