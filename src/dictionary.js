@@ -71,7 +71,7 @@ const dict = {
   'experience': experience,
   'education': education,
   'teaching': info,
-  //'contact': contact,
+  'contact': contact,
 };
 
 const paths = {
@@ -79,7 +79,7 @@ const paths = {
   'experience': { 'dir': 'work', 'key': 'experience', 'label': 'experience.yml' },
   'education': { 'dir': 'accomplishment', 'key': 'education', 'label': 'education.yml' },
   'teaching': { 'dir': 'teaching', 'key': 'teaching', 'label': 'teaching.yml' },
-  //'contact': { 'dir': 'for.you', 'key': 'contact', 'label': 'contact.yml' },
+  'contact': { 'dir': 'for.you', 'key': 'contact', 'label': 'contact.yml' },
 };
 
 export { dict, paths };

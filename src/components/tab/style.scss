@@ -9,9 +9,11 @@
     padding: 0.4em 0.625em;
     color: color(comment);
     background: color(BG-lighter);
-    -webkit-box-shadow: 0 8px 6px -6px black;
-	   -moz-box-shadow: 0 8px 6px -6px black;
-            box-shadow: 0 8px 6px -6px black, -8px 5px 6px -6px black, 8px 5px 6px -6px black;
+    -webkit-box-shadow: 0 0.5em 0.375em -0.375em black;
+	   -moz-box-shadow: 0 0.5em 0.375em -0.375em black;
+            box-shadow: 0 0.5em 0.375em -0.375em black,
+                        -0.5em 0.3125em 0.375em -0.375em black,
+                        0.5em 0.3125em 0.375em -0.375em black;
     display: flex;
     &.moved{
         padding-top: 0em;
