@@ -8,6 +8,7 @@ const Homepage = () =>
       <div className="dText">Wellcome to my OG idea for a CV page</div>
       <div className="dText">It pretends to be a window of a code editor</div>
       <div className="dText">Whereas every .yml file displays information in nice way</div>
+      <div className="dText">{"Inspired by VS CODE and Dracula's Theme colors"}</div>
       <div className="dText">Complitly done with Reactjs, full code @Github</div>
       <div className="dText">Click on a tab to start</div>
       <div className="dText">PDF version</div>
