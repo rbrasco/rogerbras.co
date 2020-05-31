@@ -7,7 +7,7 @@ const info = {
   'strong points':['Responsible', 'Persistent', 'Hard-working', 'Learning facility'],
   'motivations': ['Eager to start new projects', 'Step out my comfort zone'],
   'skills':{
-    'team-wise': 'Great communication and networking skills. Comfortable workingin a team environment',
+    'team-wise': 'Great communication and networking skills. Comfortable workingin in a team environment',
     'personal-wise': 'Ability to not crack under pressure',
   },
   'coding knowladge':['Python, Selenium webdriver', 'Reactjs, JavaScript, HTML, CSS & SASS', 'JAVA', 'C family'],
