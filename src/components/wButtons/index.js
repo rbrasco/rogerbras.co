@@ -7,7 +7,7 @@ import { isMobile } from 'react-device-detect';
 
 const WButtons = () =>  <div className="wBttns">
   <div className="trans"></div>
-  <div className="wTitle">Personal Page Project - CODE EDITOR</div>
+  <div className="wTitle">Personal Page Project - CODE</div>
   <div className="wIconsWrapper">
     <MinimizeIcon className="wIcons" fontSize={isMobile ? 'large' : 'small'}></MinimizeIcon>
     <MaximizeIcon className="wIcons" fontSize={isMobile ? 'large' : 'small'}></MaximizeIcon>
