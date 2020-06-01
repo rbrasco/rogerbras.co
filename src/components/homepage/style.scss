@@ -1,21 +1,23 @@
 .default{
     height: 100%;
     width: 100%;
+    padding-top: 6em;
 }
 .dLogo{
    // margin: 3.125em 0;
    // text-align: center;
 }
 .asciiCanvas{
-    margin: 0 auto;
+    margin: 0 auto 1em;
     width: fit-content;
+    
 }
 .dText{
     margin: auto;
     text-align: center;
 }
 .dTextWrapper{
-    margin: 0 2em;
+    margin: 0 1em;
 }
 .dRed{
     color: color(d-red);

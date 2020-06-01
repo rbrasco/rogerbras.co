@@ -13,7 +13,7 @@ export default class App extends React.Component {
   render () {
 
     return (
-      <BrowserRouter>
+      <BrowserRouter >
         <Window dict={dict} isMobile={isMobile}/>
         {isMobile ? null : <StarField />}
       </BrowserRouter>
