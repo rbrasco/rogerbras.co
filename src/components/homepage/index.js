@@ -7,7 +7,7 @@ const Homepage = () =>
     <AsciiCanvas className="dLogo" />
     <div className="dTextWrapper">
       <p className="dText"><span className="dBlue">rogerbras.co</span></p>
-      <p className="dText">Welcome to my original idea for a <span className="dBlue">CV page</span></p>
+      <p className="dText">Welcome to my original idea for a <span className="dYellow">CV page</span></p>
       <p className="dText">It pretends to be a window of a code editor</p>
       <p className="dText">Where every <span className="dPurple">.yml</span> file displays information in a nice way</p>
       <p className="dText">Inspired by <span className="dRed">VS CODE</span> and <span className="dRed">{"Dracula's Theme"}</span> colors</p>
