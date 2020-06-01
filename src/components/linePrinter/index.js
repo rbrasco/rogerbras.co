@@ -1,5 +1,6 @@
 import React from 'react';
 import { isMobile } from 'react-device-detect';
+import { withRouter } from 'react-router-dom';
 
 let i = 1;
 
@@ -41,4 +42,4 @@ const LinePrinter = ({ info }) => {
 
 };
 
-export default LinePrinter;
+export default withRouter(LinePrinter);

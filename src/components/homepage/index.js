@@ -1,5 +1,6 @@
 import React from 'react';
 import AsciiCanvas from '../asciiCanvas';
+import { withRouter } from 'react-router-dom';
 
 const Homepage = () =>
   <div className="default">
@@ -17,4 +18,4 @@ const Homepage = () =>
     </div>
   </div>;
 
-export default Homepage;
+export default withRouter(Homepage);

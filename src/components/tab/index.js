@@ -1,10 +1,9 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, withRouter } from 'react-router-dom';
 import { paths } from '../../dictionary';
 import CloseIcon from '@material-ui/icons/Close';
 import { isMobile } from 'react-device-detect';
-
 
 const writeTab = ({ key, label, active = false }) => <div className={active ? 'tab' : 'tab shadow'} key={key}>
   <Link className="link" to={'/' + key}>
@@ -27,7 +26,6 @@ const path = ({ dir, label }, isSB) => <div className={ !isSB ? 'path' : 'path m
   <div className="path_text">{dir + ' >'}</div>
   <div className="path_text">{label}</div>
 </div>;
-
 
 function rafAsync () {
 
@@ -90,4 +88,4 @@ const TabComponent = () => {
 
 };
 
-export default TabComponent;
+export default withRouter(TabComponent);

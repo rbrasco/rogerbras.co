@@ -1,5 +1,5 @@
 import React from 'react';
-import { MemoryRouter as Router } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import Window from './components/window';
 import StarField from './components/starField';
 import { dict } from './dictionary';
@@ -13,10 +13,10 @@ export default class App extends React.Component {
   render () {
 
     return (
-      <Router>
+      <BrowserRouter>
         <Window dict={dict} isMobile={isMobile}/>
         {isMobile ? null : <StarField />}
-      </Router>
+      </BrowserRouter>
     );
 
   }

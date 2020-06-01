@@ -4,9 +4,9 @@ import blockAscii from '../../images/block_ascii';
 import { isMobile } from 'react-device-detect';
 
 const AsciiCanvas = () => {
-
+ console.log(isMobile);
   const height = isMobile ? 300 : 100;
-  const width = isMobile ? 300 : 100;
+  const width = isMobile ? 300 : 150;
   const fSize = isMobile ? 40 : 15;
   let j = 0;
   const timeToWait = 1000;
