@@ -6,10 +6,26 @@
     margin: 3.125em 0;
     text-align: center;
 }
+.asciiCanvas{
+    margin: 0 auto;
+    width: fit-content;
+}
 .dText{
     margin: auto;
     text-align: center;
 }
 .dTextWrapper{
     margin: 0 2em;
+}
+.dRed{
+    color: color(d-red);
+}
+.dPurple{
+    color: color(d-purple);
+}
+.dBlue{
+    color: color(d-blue);
+}
+.dYellow{
+    color: color(d-yellow);
 }

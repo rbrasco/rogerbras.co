@@ -1,18 +1,19 @@
 import React from 'react';
+import AsciiCanvas from '../asciiCanvas';
 
 const Homepage = () =>
   <div className="default">
-    <div className="dLogo"> Logo </div>
+    <AsciiCanvas className="dLogo" />
     <div className="dTextWrapper">
-      <div className="dText">rogerbras.co</div>
-      <div className="dText">Wellcome to my OG idea for a CV page</div>
-      <div className="dText">It pretends to be a window of a code editor</div>
-      <div className="dText">Whereas every .yml file displays information in nice way</div>
-      <div className="dText">{"Inspired by VS CODE and Dracula's Theme colors"}</div>
-      <div className="dText">Complitly done with Reactjs, full code @Github</div>
-      <div className="dText">Click on a tab to start</div>
-      <div className="dText">PDF version</div>
-      <div className="dText">JUNE 2020</div>
+      <p className="dText"><span className="dBlue">rogerbras.co</span></p>
+      <p className="dText">Welcome to my original idea for a <span className="dBlue">CV page</span></p>
+      <p className="dText">It pretends to be a window of a code editor</p>
+      <p className="dText">Where every <span className="dPurple">.yml</span> file displays information in a nice way</p>
+      <p className="dText">Inspired by <span className="dRed">VS CODE</span> and <span className="dRed">{"Dracula's Theme"}</span> colors</p>
+      <p className="dText">Complitly done with <span className="dPurple">Reactjs</span>, full code at <span className="dRed">Github</span></p>
+      <p className="dText">Click on a tab to <span className="dYellow">start</span></p>
+      <p className="dText"><span className="dBlue">PDF version</span></p>
+      <p className="dText">JUNE - 2020</p>
     </div>
   </div>;
 

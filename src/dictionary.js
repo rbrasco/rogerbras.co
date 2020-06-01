@@ -5,7 +5,7 @@ const info = {
     'study': 'Mathmatics',
   },
   'strong points':['Responsible', 'Persistent', 'Hard-working', 'Learning facility'],
-  'motivations': ['Eager to start new projects', 'Step out my comfort zone'],
+  'motivations': ['Eager to start new projects', 'To step out my comfort zone'],
   'skills':{
     'team-wise': 'Great communication and networking skills. Comfortable workingin in a team environment',
     'personal-wise': 'Ability to not crack under pressure',
@@ -63,7 +63,7 @@ const contact = {
   'title': 'Please contact me from the options below',
   'home': 'Barcelona',
   'mail': 'brascoroger@gmail.com',
-  'linkedIn': 'linkedin.com/in/roger-brasco-garces',
+  'linkedIn': 'linkedin.com/in/rbrasco',
 };
 
 const dict = {
