@@ -16,6 +16,7 @@ const AsciiCanvas = () => {
   const loop = Array(blockAscii.length * 2).fill(0)
     .map((el, i) => i > blockAscii.length - 1 ? blockAscii.length * 2 - i - 1 : i);
 
+  loop.splice(blockAscii.length * 2 - 1, 1);
   loop.splice(blockAscii.length, 1);
 
   const show = (p5) => {
