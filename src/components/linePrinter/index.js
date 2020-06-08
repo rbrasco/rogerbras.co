@@ -9,7 +9,8 @@ const line = ({ i, key, label, depth = 0, array = false }) => <div className="li
   <div className={'key_text' + depth}>{key}</div>
   {key === '' ? null : <div className="dots">:</div>}
   {array ? <div className="dash"> - </div> : null}
-  <div className={isMobile ? 'label_text lt_mobile' : 'label_text'}>{label}</div>
+  {key.length < 8 ? <div className={isMobile ? 'label_text lt_mobile' : 'label_text'}>{label}</div>
+    : <div className={isMobile ? 'label_text lt_mobile long' : 'label_text'}>{label}</div>}
 </div>;
 
 const printLinesDepth = (info, key, depth) =>

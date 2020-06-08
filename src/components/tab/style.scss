@@ -85,6 +85,9 @@
     &::-webkit-scrollbar-thumb:hover {
         background: color(hover);
     }
+//  -webkit-box-shadow: inset -11px 0px 10px -7px rgba(0,0,0,0.75);
+    //    -moz-box-shadow: inset -11px 0px 10px -7px rgba(0,0,0,0.75);
+            // box-shadow: inset -11px 0px 10px -7px rgba(0,0,0,0.75);
 }
 .tabBttn{
     background-color: transparent;
@@ -107,6 +110,19 @@
     margin: auto 0.3125em auto 0;
     &.dis{
         pointer-events: none;
+    }
+}
+.rightOF{
+    position: absolute;
+    right: 0;
+    top: 2.6em;
+    color: color(comment);
+    &:hover{
+        color: color(FG);
+    }
+    &.large{
+        top: 3.3em;
+        color: color(FG);
     }
 }
 
