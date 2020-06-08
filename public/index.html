@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <title>Roger Brasco's site</title>
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="logo-green-red.ico">
   </head>
   <!-- Start Single Page Apps for GitHub Pages -->
   <script type="text/javascript">
-  if (location.protocol !== 'https:') {
+  var dev = true;
+  if (!dev && location.protocol !== 'https:') {
     location.replace(`https:${location.href.substring(location.protocol.length)}`);
   }
 
