@@ -125,5 +125,18 @@
         color: color(FG);
     }
 }
+.leftOF{
+    position: absolute;
+    left: 0;
+    top: 2.6em;
+    color: color(comment);
+    &:hover{
+        color: color(FG);
+    }
+    &.large{
+        top: 3.3em;
+        color: color(FG);
+    }
+}
 
   

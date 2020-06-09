@@ -20,12 +20,11 @@ const writeTab = ({ key, label, active = false }) => <div className={active ? 't
   </Link>
 </div>;
 
-const right = true;
-
-const tabBar = (tabs) =>
+const tabBar = (tabs, isRoL, isSB) =>
   <div className="tabBar" id="tB">
     {tabs.map(tab => writeTab(tab))}
-    {right ? <MoreHorizIcon fontSize={isMobile ? 'large' : 'small'} className={isMobile ? 'rightOF large' : 'rightOF'}/> : null}
+    {isSB && isRoL < 1 ? <MoreHorizIcon fontSize={isMobile ? 'large' : 'small'} className={isMobile ? 'rightOF large' : 'rightOF'}/> : null}
+    {isSB && isRoL !== 0 ? <MoreHorizIcon fontSize={isMobile ? 'large' : 'small'} className={isMobile ? 'leftOF large' : 'leftOF'}/> : null}
   </div>;
 
 const path = ({ dir, label }, isSB) => <div className={ !isSB ? 'path' : 'path moved'}>
@@ -66,10 +65,9 @@ function checkRoL (selector) {
     return rafAsync().then(() => checkRoL(selector));
 
   }
-  console.log(element.scrollWidth, element.clientWidth);
 
   return Promise.resolve(
-    element.scrollWidth > element.clientWidth);
+    element.scrollLeft / (element.scrollWidth - element.clientWidth));
 
 }
 
@@ -80,6 +78,13 @@ const TabComponent = () => {
   const tabInfo = Object.keys(paths).map(key => ({ ...paths[key], 'active': location === key }));
 
   const [isSB, setSB] = React.useState(true);
+  const [isRoL, setRoL] = React.useState(0);
+
+  checkRoL('tB').then((res) => {
+
+    setRoL(res);
+
+  });
 
   checkSB('tB').then((res) => {
 
@@ -100,11 +105,22 @@ const TabComponent = () => {
     }
     window.addEventListener('resize', handleResize);
 
+    function handleScroll () {
+
+      checkRoL('tB').then(res => {
+
+        setRoL(res);
+
+      });
+
+    }
+    document.getElementById('tB').addEventListener('scroll', handleScroll);
+
   });
 
   return (
     <div className="tabComponent">
-      {tabBar(tabInfo)}
+      {tabBar(tabInfo, isRoL, isSB)}
       {location === '' ? null : path(tabInfo[tabIndex.indexOf(location)], isSB)}
     </div>
   );
