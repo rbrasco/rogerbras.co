@@ -3,9 +3,7 @@ import React from 'react';
 import { Link, useLocation, withRouter } from 'react-router-dom';
 import { paths } from '../../dictionary';
 import CloseIcon from '@material-ui/icons/Close';
-import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
-import KeyboardArrowLeftIcon from '@material-ui/icons/KeyboardArrowLeft';
 
 import { isMobile } from 'react-device-detect';
 

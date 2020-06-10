@@ -10,11 +10,7 @@
 .wIcons{
     cursor: pointer;
     padding: 0.2em 0.3em;
-    &.trans{
-        color: transparent;
-        display: flex;
-        padding: 0;
-    }
+
     &:hover{
         background-color: color(hover);
     }
@@ -32,5 +28,7 @@ margin: auto;
 }
 
 .trans{
-    width: 6.95em;
+    max-width: 6.95em;
+    flex: 1;
+    
 }
