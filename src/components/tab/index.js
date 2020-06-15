@@ -75,7 +75,7 @@ function checkT (selector, isT, location) {
 
   if (element === null) {
 
-    return rafAsync().then(() => checkRoL(selector));
+    return rafAsync().then(() => checkT(selector, isT, location));
 
   }
 
