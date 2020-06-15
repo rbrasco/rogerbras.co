@@ -69,6 +69,26 @@ function checkRoL (selector) {
 
 }
 
+function checkT (selector, isT, location) {
+
+  const element = document.getElementById(selector);
+
+  if (element === null) {
+
+    return rafAsync().then(() => checkRoL(selector));
+
+  }
+
+  if (isT && location === 'teaching') {
+
+    element.scrollLeft = element.scrollWidth - element.clientWidth;
+
+  }
+
+  return Promise.resolve(false);
+
+}
+
 const TabComponent = () => {
 
   const location = useLocation().pathname.replace('/', '');
@@ -77,6 +97,7 @@ const TabComponent = () => {
 
   const [isSB, setSB] = React.useState(true);
   const [isRoL, setRoL] = React.useState(0);
+  const [isT, setT] = React.useState(true);
 
   checkRoL('tB').then((res) => {
 
@@ -113,6 +134,17 @@ const TabComponent = () => {
 
     }
     document.getElementById('tB').addEventListener('scroll', handleScroll);
+
+    function handleT () {
+
+      checkT('tB', isT, location).then(res => {
+
+        setT(res);
+
+      });
+
+    }
+    window.addEventListener('load', handleT);
 
   });
 
