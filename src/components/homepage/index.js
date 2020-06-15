@@ -5,6 +5,7 @@ import pdf from '../../files/cv_Roger_Brasco.pdf';
 const vscode = 'https://code.visualstudio.com/';
 const dracula = 'https://draculatheme.com/';
 const reactjs = 'https://reactjs.org/';
+const github = 'https://github.com/rbrasco/rogerbras.co';
 
 const linkTag = (key, text, style, title = '') => <a href={key} target='_blank' rel="noopener noreferrer" className={style} title={title}>{text}</a>;
 
@@ -18,8 +19,8 @@ const Homepage = () =>
       <p className="dText">Where every <span className="dPurple">.yml</span> file displays information in a nice way</p>
       <p className="dText">
         Inspired by {linkTag(vscode, 'VS CODE', 'dRed')} and {linkTag(dracula, "Dracula's Theme", 'dRed')} colors</p>
-      <p className="dText">Complitly done with {linkTag(reactjs, 'Reactjs', 'dPurple')}, full code at <span className="dRed">Github</span></p>
-      <p className="dText">Click on a tab to <span className="dYellow">start</span></p>
+      <p className="dText">Complitly done with {linkTag(reactjs, 'Reactjs', 'dPurple')}, full code at {linkTag(github, 'Github', 'dRed')}</p>
+      <p className="dText">Click on any tab to <span className="dYellow">start</span></p>
       <p className="dText">{linkTag(pdf, 'PDF version', 'dBlue', 'Download CV')}</p>
       <p className="dText"><span className="dPink">JUNE - 2020</span></p>
     </div>

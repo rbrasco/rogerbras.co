@@ -1,14 +1,14 @@
 .default{
-    height: 100%;
+    height: calc(100% - 3.7125em);
     width: 100%;
-    padding-top: 6em;
+    padding-top: 3.7125em;
 }
 .dLogo{
    // margin: 3.125em 0;
    // text-align: center;
 }
 .asciiCanvas{
-    margin: 0 auto 1em;
+    margin: 3em auto 1em;
     width: fit-content;
     
 }
