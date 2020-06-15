@@ -81,7 +81,7 @@ function checkT (selector, isT, location) {
 
   if (isT && location === 'teaching') {
 
-    element.scrollLeft = element.scrollWidth - element.clientWidth;
+    element.scrollLeft = Math.round(element.scrollWidth - element.clientWidth);
 
   }
 
