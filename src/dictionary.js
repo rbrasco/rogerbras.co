@@ -1,76 +1,88 @@
 const info = {
-  'title': 'About me',
-  'author':{
-    'name': 'Roger',
-    'study': 'Mathmatics',
+  'Title': 'About me',
+  'Author':{
+    'Name': 'Roger',
+    'Study': 'Mathematics',
   },
-  'strong points':['Responsible', 'Persistent', 'Hard-working', 'Learning facility'],
-  'motivations': ['Eager to start new projects', 'To step out my comfort zone'],
-  'skills':{
-    'team-wise': 'Great communication and networking skills. Comfortable workingin in a team environment',
-    'personal-wise': 'Ability to not crack under pressure',
+  'Strong points':['Responsible', 'Persistent', 'Hard-working', 'Learning facility'],
+  'Motivations': ['Eager to start new projects', 'To step out my comfort zone'],
+  'Skills':{
+    'Team-wise': 'Great communication and networking skills. Comfortable working in a team environment',
+    'Personal-wise': 'Ability to not crack under pressure',
   },
-  'coding knowladge':['Python, Selenium webdriver', 'Reactjs, JavaScript, HTML, CSS & SASS', 'JAVA', 'C family'],
+  'Coding knowladge':['Python, Selenium webdriver', 'Reactjs, JavaScript, HTML, CSS & SASS', 'JAVA', 'C family'],
 };
 
 const experience = {
-  'title': 'Work experience by importance',
-  'top':{
-    'company': 'Scytl',
-    'position': 'Software developer intern',
-    'duration': '1 year',
-    'job':['Took part in the team of managers on the services Bitbucket, Jira, Jenkins and Nexus', 'Continuous integration and process automation scripts', 'Fullstack developer in Internal Tools team'],
+  'Title': 'Work experience by importance',
+  'Top':{
+    'Company': 'Scytl',
+    'Position': 'Software developer intern',
+    'Duration': '1 year',
+    'Job':['Took part in the team of managers on the services Bitbucket, Jira, Jenkins and Nexus', 'Continuous integration and process automation scripts', 'Fullstack developer on the Internal Tools team'],
   },
-  'mid':{
-    'company': 'Snorkel DC',
-    'position': 'Divemaster',
-    'duration': '4 months',
-    'job':['Diving guide', 'Shop attendant'],
+  'Mid':{
+    'Company': 'Snorkel DC',
+    'Position': 'Divemaster',
+    'Duration': '4 months',
+    'Job':['Diving guide', 'Shop attendant'],
   },
-  'low':{
-    'company': 'ICM CSIC',
-    'position': 'Electronic technic intern',
-    'duration': '2 months',
-    'job':['Provided help to the technical team of the Technology Laboratory in ICM CSIC Biology Institute'],
+  'Low':{
+    'Company': 'ICM CSIC',
+    'Position': 'Electronic technician intern',
+    'Duration': '2 months',
+    'Job':['Provided help to the technical team of the Technology Laboratory in ICM CSIC Biology Institute'],
   },
 };
 
 const education = {
-  'title': 'Education level and lenguages',
+  'Title': 'Education level and lenguages',
   'Field studies':{
-    'university': 'Universitat de Barcelona',
-    'degree': 'Mathematics',
-    'duration': '2016 - Present',
+    'University': 'Universitat de Barcelona',
+    'Degree': 'Mathematics',
+    'Duration': '2016 - Present',
   },
   'Professional studies': {
-    'organization': 'PADI',
-    'level': 'Divemaster',
-    'issued_date': '2017',
+    'Organization': 'PADI',
+    'Level': 'Divemaster',
+    'Issued date': '2017',
   },
   'Health studies': {
-    'organization': 'Rescatadores SL',
-    'degree': 'Beach Lifeguard',
-    'issued_date': '2016',
+    'Organization': 'Rescatadores SL',
+    'Degree': 'Beach Lifeguard',
+    'Issued date': '2016',
   },
-  'lenguages':{
-    'catalan': 'Native',
-    'spanish': 'Native',
-    'english': 'Advanced',
+  'Lenguages':{
+    'Catalan': 'Native',
+    'Spanish': 'Native',
+    'Eglish': 'Advanced',
   },
 };
 
+const teaching = {
+  'Title': 'Learn to code',
+  'Offer': 'To teach the following lenguages via Discord/Skype and live sharing coding app',
+  'Languages': ['Python', 'C family', 'Reactjs, Javascript, HTML & CSS', 'And more...'],
+  'Courses types': {
+    'Beginer': 'Learn from 0 to be able to write any problem on a specific coding language',
+    'Moderate': 'Peer to peer tutoring of a specific coding language for school or university level'
+  },
+  'Schedule & Pricing': 'To be agreed with the alumn',
+  'More info': 'Please, open the contact tab and contact me from an option available there',
+}
+
 const contact = {
-  'title': 'Please contact me from the options below',
-  'home': 'Barcelona',
-  'mail': 'brascoroger@gmail.com',
-  'linkedIn': 'linkedin.com/in/rbrasco',
+  'Title': 'Please contact me from the options below',
+  'Mail': 'brascoroger@gmail.com',
+  'Linkedin': 'linkedin.com/in/rbrasco',
+  'Github': 'github.com/rbrasco',
 };
 
 const dict = {
   'info': info,
   'experience': experience,
   'education': education,
-  'teaching': info,
+  'teaching': teaching,
   'contact': contact,
 };
 
@@ -78,7 +90,7 @@ const paths = {
   'info': { 'dir': 'about.me', 'key': 'info', 'label': 'info.yml' },
   'experience': { 'dir': 'work', 'key': 'experience', 'label': 'experience.yml' },
   'education': { 'dir': 'accomplishment', 'key': 'education', 'label': 'education.yml' },
-  'teaching': { 'dir': 'teaching', 'key': 'teaching', 'label': 'teaching.yml' },
+  'teaching': { 'dir': 'code', 'key': 'teaching', 'label': 'teaching.yml' },
   'contact': { 'dir': 'for.you', 'key': 'contact', 'label': 'contact.yml' },
 };
 

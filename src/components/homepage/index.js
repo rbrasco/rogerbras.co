@@ -18,8 +18,8 @@ const Homepage = () =>
       <p className="dText">It pretends to be a window of a code editor</p>
       <p className="dText">Where every <span className="dPurple">.yml</span> file displays information in a nice way</p>
       <p className="dText">
-        Inspired by {linkTag(vscode, 'VS CODE', 'dRed')} and {linkTag(dracula, "Dracula's Theme", 'dRed')} colors</p>
-      <p className="dText">Complitly done with {linkTag(reactjs, 'Reactjs', 'dPurple')}, full code at {linkTag(github, 'Github', 'dRed')}</p>
+        Inspired by {linkTag(vscode, 'VS CODE', 'dRed', 'Visual Studio Code')} and {linkTag(dracula, "Dracula's Theme", 'dRed', 'Dracula\'s color scheme')} colors</p>
+      <p className="dText">Completely done with {linkTag(reactjs, 'Reactjs', 'dPurple', 'Reactjs')}, full code at {linkTag(github, 'Github', 'dRed', 'Repository at Github')}</p>
       <p className="dText">Click on any tab to <span className="dYellow">start</span></p>
       <p className="dText">{linkTag(pdf, 'PDF version', 'dBlue', 'Download CV')}</p>
       <p className="dText"><span className="dPink">JUNE - 2020</span></p>

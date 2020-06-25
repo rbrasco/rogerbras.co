@@ -3,14 +3,15 @@ import { isMobile, isFirefox } from 'react-device-detect';
 import { withRouter } from 'react-router-dom';
 
 let i = 1;
+const linkTag = (key, text, title = '') => <a href={key} target='_blank' rel="noopener noreferrer" style={{"color": "#f1fa8c"}} title={title}>{text}</a>; //  
 
 const line = ({ i, key, label, depth = 0, array = false }) => <div className="line" key={i}>
   <div className={depth === 0 ? 'n_line' : 'n_line moved'}>{i}</div>
   <div className={'key_text' + depth}>{key}</div>
   {key === '' ? null : <div className="dots">:</div>}
   {array ? <div className="dash"> - </div> : null}
-  {key.length < 8 ? <div className={isMobile ? 'label_text lt_mobile' : 'label_text'}>{label}</div>
-    : <div className={isMobile ? 'label_text lt_mobile long' : 'label_text'}>{label}</div>}
+  {key.length < 8 ? <div className={isMobile ? 'label_text lt_mobile' : 'label_text'}>{label.includes('.com/')? linkTag(label, label):label}</div>
+    : <div className={isMobile ? 'label_text lt_mobile long' : 'label_text'}>{label.includes('.com/')? linkTag(label, label):label}</div>}
 </div>;
 
 const printLinesDepth = (info, key, depth) =>
