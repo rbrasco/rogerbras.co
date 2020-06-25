@@ -61,14 +61,14 @@ const education = {
 
 const teaching = {
   'Title': 'Learn to code',
-  'Offer': 'To teach the following lenguages via Discord/Skype and live sharing coding app',
+  'Offer': 'To teach the following languages via Discord/Skype and live sharing coding app',
   'Languages': ['Python', 'C family', 'Reactjs, Javascript, HTML & CSS', 'And more...'],
   'Courses types': {
-    'Beginer': 'Learn from 0 to be able to write any problem on a specific coding language',
+    'Beginner': 'Learn from 0 to be able to write any problem on a specific coding language',
     'Moderate': 'Peer to peer tutoring of a specific coding language for school or university level'
   },
   'Schedule': 'To be agreed with the alumn',
-  'More info': 'Please, open the contact tab and contact me from an option available there',
+  'More info': 'Please, open the contact tab and reach out from any option available there',
 }
 
 const contact = {
@@ -76,6 +76,7 @@ const contact = {
   'Mail': 'brascoroger@gmail.com',
   'Linkedin': 'linkedin.com/in/rbrasco',
   'Github': 'github.com/rbrasco',
+  'Instagram': 'brascoroger',
 };
 
 const dict = {
