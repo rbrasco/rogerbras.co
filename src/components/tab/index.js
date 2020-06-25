@@ -21,7 +21,7 @@ const writeTab = ({ key, label, active = false }) => <div className={active ? 't
 const tabBar = (tabs, isRoL, isSB) =>
   <div className="tabBar" id="tB">
     {tabs.map(tab => writeTab(tab))}
-    {isSB && isRoL < 1 ? <MoreHorizIcon fontSize={isMobile ? 'large' : 'small'} className={isMobile ? 'rightOF large' : 'rightOF'}/> : null}
+    {isSB && isRoL < 1-0.1 ? <MoreHorizIcon fontSize={isMobile ? 'large' : 'small'} className={isMobile ? 'rightOF large' : 'rightOF'}/> : null}
     {isSB && isRoL !== 0 ? <MoreHorizIcon fontSize={isMobile ? 'large' : 'small'} className={isMobile ? 'leftOF large' : 'leftOF'}/> : null}
   </div>;
 
@@ -63,7 +63,7 @@ function checkRoL (selector) {
     return rafAsync().then(() => checkRoL(selector));
 
   }
-
+  console.log(element.scrollLeft / (element.scrollWidth - element.clientWidth));
   return Promise.resolve(
     element.scrollLeft / (element.scrollWidth - element.clientWidth));
 

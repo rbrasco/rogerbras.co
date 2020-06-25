@@ -1,5 +1,5 @@
 import React from 'react';
-import { isMobile } from 'react-device-detect';
+import { isMobile, isFirefox } from 'react-device-detect';
 import { withRouter } from 'react-router-dom';
 
 let i = 1;
@@ -35,7 +35,7 @@ const LinePrinter = ({ info }) => {
   i = 1;
 
   return (
-    <div className={isMobile ? 'page pmobile' : 'page'}>
+    <div className={`page${isMobile ? ' pmobile' : isFirefox? ' pmoz' : ''}`}>
       {printLines(info)}
       {line({ 'i': i++, 'key': '', 'label': '' })}
     </div>

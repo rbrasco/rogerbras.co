@@ -67,12 +67,15 @@
     display: flex;
     overflow: auto;
     overflow-y: hidden;
-    scrollbar-width: thin;
+
     &:hover{
         &::-webkit-scrollbar-thumb {
             background: color(hover-trns);
         }
     }
+    scrollbar-width: thin;
+    scrollbar-color: color(hover-trns) color(BG-light)  !important;
+    
     &::-webkit-scrollbar {
         height: 0.4em;
     }

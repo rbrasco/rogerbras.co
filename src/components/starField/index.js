@@ -11,10 +11,7 @@ const StarField = () => {
   const speed = 0.05;
   const BG = '#090b14';
   const n = 2000;
-  const range = Array(n).fill();
-  let stars = {};
-
-  range.forEach((_, i) => (stars = { ...stars, [`${i}`]: random(width, height) }));
+  const stars = Array.from({length: n}, () => random(width, height));
 
   const show = (p5, i) => {
 
@@ -22,7 +19,7 @@ const StarField = () => {
     p5.noStroke();
     const sx = p5.map(stars[i].x / stars[i].z, 0, 1, 0, width);
     const sy = p5.map(stars[i].y / stars[i].z, 0, 1, 0, width);
-    const r = p5.map(stars[i].z, 0, width, 6, 0);
+    const r = p5.map(stars[i].z, 0, width, width*0.006, 0);
 
     p5.ellipse(sx, sy, r, r);
 
@@ -48,11 +45,11 @@ const StarField = () => {
   const draw = p5 => {
 
     width = document.body.clientWidth;
-    height = window.innerHeight;
+    height = document.body.clientHeight;
     p5.resizeCanvas(width, height, true);
     p5.background(BG);
     p5.translate(width / 2, height / 2);
-    for (let i = 0; i < range.length; i++) {
+    for (let i = 0; i < stars.length; i++) {
 
       update(p5, i);
       show(p5, i);

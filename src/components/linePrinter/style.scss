@@ -6,22 +6,28 @@
     overflow: auto;
     overflow-x: hidden;
     padding-top: 0.5em;
+
+    scrollbar-width: thin;
+    scrollbar-color: color(hover-trns) color(BG-light)  !important;
     &::-webkit-scrollbar {
       width: 1em;
     }
     &::-webkit-scrollbar-track {
-        background: #2c2e3b;
-        border-top: 0.03125em solid #191A21;
-        border-left: 0.03125em solid #191A21;
+        background: color(BG-light);
+        border-top: 0.03125em solid color(BG-darker);
+        border-left: 0.03125em solid color(BG-darker);
     }
     &::-webkit-scrollbar-thumb {
-        background: #42445085;
+        background: color(hover-trns);
     }
     &::-webkit-scrollbar-thumb:hover {
-        background: #424450;
+        background: color(hover);
     }
     &.pmobile{
         height: calc(100% - 6.02em);
+    }
+    &.pmoz{
+        height: calc(100% - 6.64em);
     }
 }
 .line{
