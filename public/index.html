@@ -7,9 +7,9 @@
   </head>
   <script type="text/javascript">
   
-  if (window.location.hostname !== 'localhost' && window.location.protocol !== 'https:') {
-    window.location.protocol = "https";
-    // location.replace(`https:${location.href.substring(location.protocol.length)}`);
+  if (location.hostname !== 'localhost' && location.protocol !== 'https:') {
+    // window.location.protocol = "https";
+    location.replace(`https:${location.href.substring(location.protocol.length)}`);
   }
 
     /*(function(l) {
