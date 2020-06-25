@@ -67,7 +67,7 @@ const teaching = {
     'Beginer': 'Learn from 0 to be able to write any problem on a specific coding language',
     'Moderate': 'Peer to peer tutoring of a specific coding language for school or university level'
   },
-  'Schedule & Pricing': 'To be agreed with the alumn',
+  'Schedule': 'To be agreed with the alumn',
   'More info': 'Please, open the contact tab and contact me from an option available there',
 }
 
