@@ -92,3 +92,12 @@
         border-left: 0.0625em solid #44475a;
     }
 }
+.cursor{
+    border-left: 2px solid color(d-grey);
+    animation: blink 1.2s step-end infinite;
+}
+
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: color(d-grey); }
+  }
