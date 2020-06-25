@@ -35,7 +35,7 @@ function rafAsync () {
 
   return new Promise(resolve => {
 
-    requestAnimationFrame(resolve); // faster than set time out
+    requestAnimationFrame(resolve);
 
   });
 
@@ -63,7 +63,7 @@ function checkRoL (selector) {
     return rafAsync().then(() => checkRoL(selector));
 
   }
-  console.log(element.scrollLeft / (element.scrollWidth - element.clientWidth));
+
   return Promise.resolve(
     element.scrollLeft / (element.scrollWidth - element.clientWidth));
 
@@ -111,6 +111,12 @@ const TabComponent = () => {
 
   });
 
+  checkT('tB', isT, location).then(res => {
+
+    setT(res);
+
+  });
+
   React.useEffect(() => {
 
     function handleResize () {
@@ -135,7 +141,7 @@ const TabComponent = () => {
     }
     document.getElementById('tB').addEventListener('scroll', handleScroll);
 
-    function handleT () {
+    /*function handleT () {
 
       checkT('tB', isT, location).then(res => {
 
@@ -144,7 +150,7 @@ const TabComponent = () => {
       });
 
     }
-    window.addEventListener('load', handleT);
+    window.addEventListener('load', handleT);*/
 
   });
 
