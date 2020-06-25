@@ -6,12 +6,13 @@
     <link rel="icon" href="logo-green-red.ico">
   </head>
   <script type="text/javascript">
-
-  if (location.hostname !== 'localhost' && location.protocol !== 'https:') {
-    location.replace(`https:${location.href.substring(location.protocol.length)}`);
+  
+  if (window.location.hostname !== 'localhost' && window.location.protocol !== 'https:') {
+    window.location.protocol = "https";
+    // location.replace(`https:${location.href.substring(location.protocol.length)}`);
   }
 
-    (function(l) {
+    /*(function(l) {
       if (l.search) {
         var q = {};
         l.search.slice(1).split('&').forEach(function(v) {
@@ -26,7 +27,7 @@
           );
         }
       }
-    }(window.location))
+    }(window.location))*/
   </script>
   <body>
     <div id="root"></div>
