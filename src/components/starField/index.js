@@ -19,7 +19,7 @@ const StarField = () => {
     p5.noStroke();
     const sx = p5.map(stars[i].x / stars[i].z, 0, 1, 0, width);
     const sy = p5.map(stars[i].y / stars[i].z, 0, 1, 0, width);
-    const r = p5.map(stars[i].z, 0, width, width*0.006, 0);
+    const r = p5.map(stars[i].z, 0, width, width*0.005, 0);
 
     p5.ellipse(sx, sy, r, r);
 

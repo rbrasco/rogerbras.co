@@ -18,11 +18,12 @@ const writeTab = ({ key, label, active = false }) => <div className={active ? 't
   </Link>
 </div>;
 
+const e = 0.2;
 const tabBar = (tabs, isRoL, isSB) =>
   <div className="tabBar" id="tB">
     {tabs.map(tab => writeTab(tab))}
-    {isSB && isRoL < 1-0.1 ? <MoreHorizIcon fontSize={isMobile ? 'large' : 'small'} className={isMobile ? 'rightOF large' : 'rightOF'}/> : null}
-    {isSB && isRoL !== 0 ? <MoreHorizIcon fontSize={isMobile ? 'large' : 'small'} className={isMobile ? 'leftOF large' : 'leftOF'}/> : null}
+    {isSB && isRoL < 1-e ? <MoreHorizIcon fontSize={isMobile ? 'large' : 'small'} className={isMobile ? 'rightOF large' : 'rightOF'}/> : null}
+    {isSB && isRoL > e ? <MoreHorizIcon fontSize={isMobile ? 'large' : 'small'} className={isMobile ? 'leftOF large' : 'leftOF'}/> : null}
   </div>;
 
 const path = ({ dir, label }, isSB) => <div className={ !isSB ? 'path' : 'path moved'}>

@@ -3,7 +3,7 @@ import { isMobile, isFirefox } from 'react-device-detect';
 import { withRouter } from 'react-router-dom';
 
 let i = 1;
-const linkTag = (key, text, title = '') => <a href={key} target='_blank' rel="noopener noreferrer" style={{"color": "#f1fa8c", "text-decoration": "none"}} title={title}>{text}</a>; //  
+const linkTag = (key, text, title = '') => <a href={key} target='_blank' rel="noopener noreferrer" className="llink" title={title}>{text}</a>; //  
 
 const line = ({ i, key, label, depth = 0, array = false }) => <div className="line" key={i}>
   <div className={depth === 0 ? 'n_line' : 'n_line moved'}>{i}</div>

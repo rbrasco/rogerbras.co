@@ -2,18 +2,19 @@ import React from 'react';
 import AsciiCanvas from '../asciiCanvas';
 import { withRouter } from 'react-router-dom';
 import pdf from '../../files/cv_Roger_Brasco.pdf';
+
 const vscode = 'https://code.visualstudio.com/';
 const dracula = 'https://draculatheme.com/';
 const reactjs = 'https://reactjs.org/';
 const github = 'https://github.com/rbrasco/rogerbras.co';
 
-const linkTag = (key, text, style, title = '') => <a href={key} target='_blank' rel="noopener noreferrer" className={style} title={title}>{text}</a>;
+const linkTag = (key, text, style, title = '') => <a href={key} target='_blank' rel="noopener noreferrer" className={`${style} dlink`} title={title}>{text}</a>;
 
 const Homepage = () =>
   <div className="default">
     <AsciiCanvas className="dLogo" />
     <div className="dTextWrapper">
-      <p className="dText"><span className="dBlue">rogerbras.co</span></p>
+      <p className="dText"><span className="dBlue dlink" title="My personal page">rogerbras.co</span></p>
       <p className="dText">Welcome to my original idea for a <span className="dYellow">CV page</span></p>
       <p className="dText">It pretends to be a window of a code editor</p>
       <p className="dText">Where every <span className="dPurple">.yml</span> file displays information in a nice way</p>

@@ -60,15 +60,15 @@ const education = {
 };
 
 const teaching = {
-  'Title': 'Learn to code',
-  'Offer': 'To teach the following languages via Discord/Skype and live sharing coding app',
-  'Languages': ['Python', 'C family', 'Reactjs, Javascript, HTML & CSS', 'And more...'],
-  'Courses types': {
-    'Beginner': 'Learn from 0 to be able to write any problem on a specific coding language',
-    'Moderate': 'Peer to peer tutoring of a specific coding language for school or university level'
+  'Título': 'Aprende a programar',
+  'Oferta': 'Realizaremos clases particulares de cualquier lenguaje vía Discord/Skype',
+  'Lenguajes': ['Python', 'Familia C', 'Reactjs, Javascript, HTML & CSS', 'Y más...'],
+  'Cursos': {
+    'Begginer': 'Empieza a programar sin experiencia previa! ',
+    'Moderate': 'Quieres ampliar tus conocimientos? Haremos clases de refuerzo des del nivel del alumno'
   },
-  'Schedule': 'To be agreed with the alumn',
-  'More info': 'Please, open the contact tab and reach out from any option available there',
+  'Horario': 'Para acordar con el alumno',
+  'Más información': 'Por favor, contactame desde la opción de la pestaña "contact"',
 }
 
 const contact = {

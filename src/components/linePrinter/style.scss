@@ -101,3 +101,11 @@
     from, to { border-color: transparent }
     50% { border-color: color(d-grey); }
   }
+
+.llink{
+    color: color(d-yellow);
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}

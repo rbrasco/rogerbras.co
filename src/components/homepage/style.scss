@@ -22,20 +22,50 @@
 .dRed{
     color: color(d-red);
     text-decoration: none;
+    &.dlink{
+        &:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
 }
 .dPurple{
     color: color(d-purple);
     text-decoration: none;
+    &.dlink{
+        &:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
 }
 .dBlue{
     color: color(d-blue);
     text-decoration: none;
+    &.dlink{
+        &:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
 }
 .dYellow{
     color: color(d-yellow);
     text-decoration: none;
+    &.dlink{
+        &:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
 }
 .dPink{
     color: color(d-pink);
     text-decoration: none;
+    &.dlink{
+        &:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
 }
