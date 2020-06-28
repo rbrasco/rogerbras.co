@@ -64,11 +64,11 @@ const teaching = {
   'Oferta': 'Realizaremos clases particulares de cualquier lenguaje vía Discord/Skype',
   'Lenguajes': ['Python', 'Familia C', 'Reactjs, Javascript, HTML & CSS', 'Y más...'],
   'Cursos': {
-    'Begginer': 'Empieza a programar sin experiencia previa! ',
-    'Moderate': 'Quieres ampliar tus conocimientos? Haremos clases de refuerzo des del nivel del alumno'
+    'Begginer': 'Empieza a programar sin experiencia previa!',
+    'Moderate': '¿Quieres ampliar tus conocimientos? Haremos clases de refuerzo des del nivel del alumno'
   },
   'Horario': 'Para acordar con el alumno',
-  'Más información': 'Por favor, contactame desde la opción de la pestaña "contact"',
+  'Más información': 'Por favor, contactarme desde la opción de la pestaña "contact"',
 }
 
 const contact = {
