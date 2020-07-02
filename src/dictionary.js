@@ -76,14 +76,14 @@ const contact = {
   'Mail': 'brascoroger@gmail.com',
   'Linkedin': 'linkedin.com/in/rbrasco',
   'Github': 'github.com/rbrasco',
-  'Instagram': 'brascoroger',
+  // 'Instagram': 'brascoroger',
 };
 
 const dict = {
   'info': info,
   'experience': experience,
   'education': education,
-  'teaching': teaching,
+  // 'teaching': teaching,
   'contact': contact,
 };
 
@@ -91,7 +91,7 @@ const paths = {
   'info': { 'dir': 'about.me', 'key': 'info', 'label': 'info.yml' },
   'experience': { 'dir': 'work', 'key': 'experience', 'label': 'experience.yml' },
   'education': { 'dir': 'accomplishment', 'key': 'education', 'label': 'education.yml' },
-  'teaching': { 'dir': 'code', 'key': 'teaching', 'label': 'teaching.yml' },
+  // 'teaching': { 'dir': 'code', 'key': 'teaching', 'label': 'teaching.yml' },
   'contact': { 'dir': 'for.you', 'key': 'contact', 'label': 'contact.yml' },
 };
 
