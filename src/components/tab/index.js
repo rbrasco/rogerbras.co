@@ -4,11 +4,13 @@ import { Link, useLocation, withRouter } from 'react-router-dom';
 import { paths } from '../../dictionary';
 import CloseIcon from '@material-ui/icons/Close';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
+import PriorityHighIcon from '@material-ui/icons/PriorityHigh';
 
 import { isMobile } from 'react-device-detect';
 
 const writeTab = ({ key, label, active = false }) => <div className={active ? 'tab' : 'tab shadow'} key={key}>
   <Link className="link" to={'/' + key}>
+    <PriorityHighIcon className="exclamation" fontSize="small"/>
     <button className="tabBttn">
       {label}
     </button>
@@ -22,7 +24,7 @@ const e = 0.2;
 const tabBar = (tabs, isRoL, isSB) =>
   <div className="tabBar" id="tB">
     {tabs.map(tab => writeTab(tab))}
-    {isSB && isRoL < 1-e ? <MoreHorizIcon fontSize={isMobile ? 'large' : 'small'} className={isMobile ? 'rightOF large' : 'rightOF'}/> : null}
+    {isSB && isRoL < 1 - e ? <MoreHorizIcon fontSize={isMobile ? 'large' : 'small'} className={isMobile ? 'rightOF large' : 'rightOF'}/> : null}
     {isSB && isRoL > e ? <MoreHorizIcon fontSize={isMobile ? 'large' : 'small'} className={isMobile ? 'leftOF large' : 'leftOF'}/> : null}
   </div>;
 
@@ -142,7 +144,7 @@ const TabComponent = () => {
     }
     document.getElementById('tB').addEventListener('scroll', handleScroll);
 
-    /*function handleT () {
+    /* function handleT () {
 
       checkT('tB', isT, location).then(res => {
 

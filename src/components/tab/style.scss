@@ -104,6 +104,7 @@
     color:color(FG);
     text-decoration: none;
     padding: 0.625em;
+    display: flex;
 }
 .linkX{
     display: flex;
@@ -138,5 +139,9 @@
         color: color(FG);
     }
 }
-
-  
+.exclamation{
+    transform: rotate(8deg);
+    font-size: 1em!important;
+    color: color(d-purple);
+    margin-right: 0.3em;
+}
