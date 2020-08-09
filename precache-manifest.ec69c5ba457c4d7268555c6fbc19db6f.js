@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4316de27765cc812f0f65b2b0d131b0f",
+    "revision": "71aee2308af8514d205f932dd41edb62",
     "url": "/index.html"
   },
   {
-    "revision": "d6ed5a45daf56b17cb36",
+    "revision": "d086eba73dd5f499a3a8",
     "url": "/static/css/main.6af3c347.chunk.css"
   },
   {
@@ -16,15 +16,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.0154791a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d6ed5a45daf56b17cb36",
-    "url": "/static/js/main.d158d32a.chunk.js"
+    "revision": "d086eba73dd5f499a3a8",
+    "url": "/static/js/main.208a2a98.chunk.js"
   },
   {
     "revision": "48a955e3aa8e31c3e183",
     "url": "/static/js/runtime-main.0b38abdf.js"
   },
   {
-    "revision": "ab371ccc87056338d0d25a104f40d0d9",
-    "url": "/static/media/cv_Roger_Brasco.ab371ccc.pdf"
+    "revision": "db6ae626dc9a0dbe9db0531e343919dc",
+    "url": "/static/media/Roger_Brasco_cv.db6ae626.pdf"
   }
 ]);
