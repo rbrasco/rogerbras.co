@@ -1,7 +1,7 @@
 import React from 'react';
 import AsciiCanvas from '../asciiCanvas';
 import { withRouter } from 'react-router-dom';
-import pdf from '../../files/cv_Roger_Brasco.pdf';
+import pdf from '../../files/Roger_Brasco_cv.pdf';
 
 const vscode = 'https://code.visualstudio.com/';
 const dracula = 'https://draculatheme.com/';

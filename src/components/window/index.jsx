@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route, Switch, useLocation, Redirect } from 'react-router-dom';
-import TabComponent from './../tab';
-import WButtons from './../wButtons';
-import LinePrinter from './../linePrinter';
-import Homepage from './../homepage';
+import TabComponent from '../tab';
+import WButtons from '../wButtons';
+import LinePrinter from '../linePrinter';
+import Homepage from '../homepage';
 
 const Window = ({ dict, isMobile }) => {
 

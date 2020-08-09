@@ -1,0 +1,10 @@
+{
+    "editor.formatOnSave": false,
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "[scss]": {
+        "editor.suggest.insertMode": "replace",
+        "editor.formatOnSave": true,
+    }   
+}

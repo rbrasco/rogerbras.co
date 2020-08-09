@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "@material-ui/icons": "^4.9.1",
+    "eslint-plugin-react": "^7.20.5",
     "react": "^16.13.1",
     "react-custom-scrollbars": "^4.2.1",
     "react-device-detect": "^1.12.1",

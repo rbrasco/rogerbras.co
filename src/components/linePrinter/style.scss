@@ -8,104 +8,131 @@
     padding-top: 0.5em;
 
     scrollbar-width: thin;
-    scrollbar-color: color(hover-trns) color(BG-light)  !important;
+    scrollbar-color: color(hover-trns) color(BG-light) !important;
+
     &::-webkit-scrollbar {
-      width: 1em;
+        width: 1em;
     }
+
     &::-webkit-scrollbar-track {
         background: color(BG-light);
         border-top: 0.03125em solid color(BG-darker);
         border-left: 0.03125em solid color(BG-darker);
     }
+
     &::-webkit-scrollbar-thumb {
         background: color(hover-trns);
     }
+
     &::-webkit-scrollbar-thumb:hover {
         background: color(hover);
     }
-    &.pmobile{
+
+    &.pmobile {
         height: calc(100% - 5.85em);
     }
-    &.pmoz{
+
+    &.pmoz {
         height: calc(100% - 6.38em);
     }
 }
-.line{
+
+.line {
     display: flex;
     height: fit-content;
     min-height: 1.35em;
 }
-.n_line{
+
+.n_line {
     padding: 0 1.25em 0 0.625em;
     width: 1.25em;
     text-align: end;
-    
+
     &.moved {
-       border-right: 0.0625em solid #44475a;
+        border-right: 0.0625em solid #44475a;
     }
 }
-.key_text0{
+
+.key_text0 {
     color: color(d-blue);
 }
-.key_text1{
+
+.key_text1 {
     color: color(d-blue);
     padding-left: 1em;
     white-space: nowrap;
 }
-.key_text2{
-    color: color(d-blue);
-    padding-left: 1em;
-    margin-left: 1em;
-    border-left: 0.0625em solid #44475a;
-    white-space: nowrap;
-}
-.key_text3{
+
+.key_text2 {
     color: color(d-blue);
     padding-left: 1em;
     margin-left: 1em;
     border-left: 0.0625em solid #44475a;
     white-space: nowrap;
 }
-.label_text{
+
+.key_text3 {
+    color: color(d-blue);
+    padding-left: 1em;
+    margin-left: 1em;
+    border-left: 0.0625em solid #44475a;
+    white-space: nowrap;
+}
+
+.label_text {
     color: color(d-yellow);
     margin-left: 0.1875em;
     height: fit-content;
     //max-width: 25em;
     max-width: calc(100% - 11em);
-    &.lt_mobile{
+
+    &.lt_mobile {
         max-width: calc(100vw - 8em);
-        &.long{
-        max-width: calc(100vw - 14em);
-       }
+
+        &.long {
+            max-width: calc(100vw - 14em);
+        }
     }
 }
+
 .dots {
     color: color(d-pink);
     margin-right: 0.3125em;
     margin-left: 0.0625em;
 }
-.dash{
-    color:  color(d-pink);
+
+.dash {
+    color: color(d-pink);
     margin-right: 0.3125em;
-    &.moved{
+
+    &.moved {
         padding-left: 1em;
         border-left: 0.0625em solid #44475a;
     }
 }
-.cursor{
+
+.cursor {
     border-left: 2px solid color(d-grey);
     animation: blink 1.2s step-end infinite;
 }
 
 @keyframes blink {
-    from, to { border-color: transparent }
-    50% { border-color: color(d-grey); }
-  }
 
-.llink{
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: color(d-grey);
+    }
+}
+
+.llink {
     color: color(d-yellow);
     text-decoration: none;
-    &:hover{
+
+    &:hover {
         text-decoration: underline;
     }
 }
