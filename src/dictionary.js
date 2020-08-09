@@ -73,7 +73,7 @@ const teaching = {
 
 const contact = {
   'Title': 'Please contact me from the options below',
-  'Mail': 'brascoroger@gmail.com',
+  'Mail': 'me@rogerbras.co',
   'Linkedin': 'linkedin.com/in/rbrasco',
   'Github': 'github.com/rbrasco',
   // 'Instagram': 'brascoroger',
