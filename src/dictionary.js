@@ -16,7 +16,7 @@ const info = {
     "Personal-wise": "Ability to not crack under pressure",
   },
   "Coding knowladge": [
-    "Python, Selenium webdriver",
+    "Python, Selenium webdriver, Web Scrapping",
     "Reactjs, JavaScript, HTML, CSS & SASS",
     "JAVA",
     "C family",
