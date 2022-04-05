@@ -12,11 +12,12 @@ const info = {
   ],
   Motivations: ["Eager to start new projects", "To step out my comfort zone"],
   Skills: {
-    "Team-wise": "Great communication and networking skills. Comfortable working in a team environment",
+    "Team-wise":
+      "Great communication and networking skills. Comfortable working in a team environment",
     "Personal-wise": "Ability to not crack under pressure",
   },
   "Coding knowladge": [
-    "Python, Selenium webdriver, Web Scrapping",
+    "Python, Selenium, Django, Web Scrapping",
     "Reactjs, JavaScript, HTML, CSS & SASS",
     "JAVA",
     "C family",
@@ -25,29 +26,41 @@ const info = {
 
 const experience = {
   Title: "Work experience by importance",
+  Current: {
+    Company: "Shalion",
+    Position: "Product Manager Junior",
+    Duration: "Dec-2021 - Present",
+    Job: [
+      "Define and manage the development of new features of sold products",
+      "Carry out training to the overseas operations team",
+    ],
+  },
   Top: {
+    Company: "Shalion",
+    Position: "Research & Development intern",
+    Duration: "1 year",
+    Job: [
+      "Develop automation scripts for the operations team",
+      "Start products that are sold to clients",
+      "Technical support to the operations team",
+      "Look for bugs in code",
+    ],
+  },
+  Mid: {
     Company: "Scytl",
     Position: "Software developer intern",
     Duration: "1 year",
     Job: [
-      "Took part in the team of managers on the services Bitbucket, Jira, Jenkins and Nexus",
+      "Took part in the team of managers on the services Bitbucket, Jira, Jenkins, and Nexus",
       "Continuous integration and process automation scripts",
       "Fullstack developer on the Internal Tools team",
     ],
   },
-  Mid: {
+  Low: {
     Company: "Snorkel DC",
     Position: "Divemaster",
     Duration: "4 months",
-    Job: ["Diving guide", "Shop attendant"],
-  },
-  Low: {
-    Company: "ICM CSIC",
-    Position: "Electronic technician intern",
-    Duration: "2 months",
-    Job: [
-      "Provided help to the technical team of the Technology Laboratory in ICM CSIC Biology Institute",
-    ],
+    Job: ["Diving guide"],
   },
 };
 
@@ -56,7 +69,7 @@ const education = {
   "Field studies": {
     University: "Universitat de Barcelona",
     Degree: "Mathematics",
-    Duration: "2016 - Present",
+    Duration: "2016 - 2021",
   },
   "Professional studies": {
     Organization: "PADI",
@@ -68,7 +81,7 @@ const education = {
     Degree: "Beach Lifeguard",
     "Issued date": "2016",
   },
-  Lenguages: {
+  Languages: {
     Catalan: "Native",
     Spanish: "Native",
     Eglish: "Advanced",
@@ -89,7 +102,7 @@ const education = {
 
 const contact = {
   Title: "Please contact me from the options below",
-  Mail: "me@rogerbras.co",
+  Mail: "brascoroger@gmail.com",
   Linkedin: "linkedin.com/in/rbrasco",
   Github: "github.com/rbrasco",
   // 'Instagram': 'brascoroger',
@@ -127,7 +140,4 @@ const paths = {
   },
 };
 
-export {
-  dict,
-  paths
-};
+export { dict, paths };
