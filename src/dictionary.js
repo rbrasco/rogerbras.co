@@ -122,7 +122,7 @@ const experience = {
 };
 
 const education = {
-  Title: "Education level and lenguages",
+  Title: "Education level and languages",
   "Field studies": {
     University: "Universitat de Barcelona",
     Degree: "Mathematics",
