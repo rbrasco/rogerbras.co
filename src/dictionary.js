@@ -85,7 +85,7 @@ const experience = {
   Title: "Work experience by importance",
   Current: {
     Company: "Shalion",
-    Position: "Product Manager Junior",
+    Position: "Junior Product Manager",
     Duration: `Dec 2021 - Present (${getDateTimeSince(new Date(2021, 11, 1))})`,
     Job: [
       "Define and manage the development of new features of sold products",
