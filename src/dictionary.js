@@ -120,7 +120,7 @@ const education = {
   Title: "Education level and languages",
   "Field studies": {
     University: "Universitat de Barcelona",
-    Degree: "Mathematics - Minor in Computer Science",
+    Degree: "Mathematics - Minor in CS",
     Duration: "2016 - 2021",
   },
   "Professional studies": {
