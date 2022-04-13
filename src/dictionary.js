@@ -24,11 +24,6 @@ const info = {
   ],
 };
 
-var now = new Date();
-var bDay = new Date(2021, 12, 1);
-var elapsedT = now - bDay; // in ms
-console.log(elapsedT);
-
 function getDaysInMonth(month, year) {
   if (typeof year == "undefined") year = 1999; // any non-leap-year works as default
   var currmon = new Date(year, month),
@@ -80,7 +75,7 @@ function getDateTimeSince(target) {
   if (md > 0) out.push(md + " mo" + (md === 1 ? "" : "s"));
   return out.join(" ");
 }
-console.log();
+
 const experience = {
   Title: "Work experience by importance",
   Current: {
@@ -125,7 +120,7 @@ const education = {
   Title: "Education level and languages",
   "Field studies": {
     University: "Universitat de Barcelona",
-    Degree: "Mathematics",
+    Degree: "Mathematics - Minor in Computer Science",
     Duration: "2016 - 2021",
   },
   "Professional studies": {
