@@ -34,7 +34,7 @@ function getDaysInMonth(month, year) {
 }
 function getDateTimeSince(target) {
   // target should be a Date object
-  var now = new Date(),
+  let now = new Date(),
     yd,
     md,
     dd,
@@ -73,21 +73,30 @@ function getDateTimeSince(target) {
 
   if (yd > 0) out.push(yd + " yr" + (yd === 1 ? "" : "s"));
   if (md > 0) out.push(md + " mo" + (md === 1 ? "" : "s"));
-  return out.join(" ");
+  return out.join(" ") || "1 mo";
 }
 
 const experience = {
-  Title: "Work experience by importance",
+  Title: "Work experience by relevance",
   Current: {
+    Company: "mlean",
+    Position: "Junior DevOps Engineer",
+    Duration: `Jul 2022 - Present (${getDateTimeSince(new Date(2022, 6, 1))})`,
+    // Job: [
+    //   "Define and manage the development of new features of sold products",
+    //   "Carry out training to the overseas operations team",
+    // ],
+  },
+  Top: {
     Company: "Shalion",
     Position: "Junior Product Manager",
-    Duration: `Dec 2021 - Present (${getDateTimeSince(new Date(2021, 11, 1))})`,
+    Duration: `Dec 2021 - Jul 2022 (8 mos)`,
     Job: [
       "Define and manage the development of new features of sold products",
       "Carry out training to the overseas operations team",
     ],
   },
-  Top: {
+  Mid: {
     Company: "Shalion",
     Position: "Research & Development intern",
     Duration: " Feb 2021 - Dec 2021 (11 mos)",
@@ -98,7 +107,7 @@ const experience = {
       "Look for bugs in code",
     ],
   },
-  Mid: {
+  Low: {
     Company: "Scytl",
     Position: "Software developer intern",
     Duration: "Jun 2019 - May 2020 (1 yr)",
@@ -108,7 +117,7 @@ const experience = {
       "Fullstack developer on the Internal Tools team",
     ],
   },
-  Low: {
+  "Other-league": {
     Company: "Snorkel DC",
     Position: "Divemaster",
     Duration: "4 months",
