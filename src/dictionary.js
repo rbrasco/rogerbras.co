@@ -131,6 +131,7 @@ const education = {
     University: "Universitat de Barcelona",
     Degree: "Mathematics - Minor in CS",
     Duration: "2016 - 2021",
+    "Final thesis": "diposit.ub.edu/dspace/handle/2445/186208",
   },
   "Professional studies": {
     Organization: "PADI",
