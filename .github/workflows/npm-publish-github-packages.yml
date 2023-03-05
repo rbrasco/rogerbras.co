@@ -4,7 +4,10 @@
 name: Node.js Package
 
 on:
-  push
+  push:
+    branches:
+      - 'main'
+  
 
 permissions:
   id-token: write
