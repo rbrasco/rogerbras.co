@@ -31,7 +31,7 @@ jobs:
           node-version: 10
       - uses: actions/configure-pages@v3
       - run: npm ci
-      - run: npm build
+      - run: npm run build
       - uses: actions/upload-pages-artifact@v1
 
   publish-gpr:
