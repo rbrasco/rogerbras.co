@@ -2,7 +2,6 @@
   "homepage": "https://rogerbras.co",
   "name": "rogerbras.co",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@material-ui/icons": "4.9.1",
     "eslint-plugin-react": "7.20.5",
