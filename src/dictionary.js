@@ -16,11 +16,11 @@ const info = {
       "Great communication and networking skills. Comfortable working in a team environment",
     "Personal-wise": "Ability to not crack under pressure",
   },
-  "Coding knowladge": [
-    "Python, Selenium, Django, Web Scrapping",
-    "Reactjs, JavaScript, HTML, CSS & SASS",
-    "JAVA",
-    "C family",
+  "Tech stuff": [
+    "C family, Python, Reactjs, and Bash",
+    "AWS Certified Cloud Practioner",
+    "Terraform Associate Certified",
+    "Ansible",
   ],
 };
 
@@ -78,38 +78,36 @@ function getDateTimeSince(target) {
 
 const experience = {
   Title: "Work experience by relevance",
-  Current: {
-    Company: "mlean",
+  Top: {
+    Company: "MLean",
     Position: "Junior DevOps Engineer",
     Duration: `Jul 2022 - Present (${getDateTimeSince(new Date(2022, 6, 1))})`,
-    // Job: [
-    //   "Define and manage the development of new features of sold products",
-    //   "Carry out training to the overseas operations team",
-    // ],
-  },
-  Top: {
-    Company: "Shalion",
-    Position: "Junior Product Manager",
-    Duration: `Dec 2021 - Jul 2022 (8 mos)`,
-    Job: [
-      "Define and manage the development of new features of sold products",
-      "Carry out training to the overseas operations team",
+    Challenges: [
+      "Implementation of a cost-saving policy resulted in a 13% reduction in infrastructure costs",
+      "Definition of a pipeline for large-scale data migration from EBS AWS to S3 AWS with minimal impact on users",
+    ],
+    Responsibilities: [
+      "Oversee successful software deployment for over 80+ clients",
+      "Maintain and create new CI/CD Jenkins pipelines",
+      "Efficiently manage 400+ EC2 AWS Instances utilizing Ansible",
+      "Use Terraform to manage a single-tenant infrastructure for 80+ clients",
     ],
   },
   Mid: {
     Company: "Shalion",
-    Position: "Research & Development intern",
-    Duration: " Feb 2021 - Dec 2021 (11 mos)",
+    Position: "Research & Development Engineer",
+    Duration: " Feb 2021 - Jul 2022 (1 y 6 mos)",
     Job: [
-      "Develop automation scripts for the operations team",
-      "Start products that are sold to clients",
-      "Technical support to the operations team",
-      "Look for bugs in code",
+      "Started with an internship and ended up with a permanent contract",
+      "Define and manage the development of customer product features",
+      "Conduct technical training and mentor the operations team",
+      "Develop process automation scripts for the operations team",
+      "Investigate code bugs",
     ],
   },
   Low: {
     Company: "Scytl",
-    Position: "Software developer intern",
+    Position: "Software developer internship",
     Duration: "Jun 2019 - May 2020 (1 yr)",
     Job: [
       "Took part in the team of managers on the services Bitbucket, Jira, Jenkins, and Nexus",
@@ -167,7 +165,6 @@ const contact = {
   Mail: "brascoroger@gmail.com",
   Linkedin: "linkedin.com/in/rbrasco",
   Github: "github.com/rbrasco",
-  // 'Instagram': 'brascoroger',
 };
 
 const dict = {
