@@ -107,7 +107,7 @@ const experience = {
   },
   Low: {
     Company: "Scytl",
-    Position: "Software developer internship",
+    Position: "Software Engineer Internship",
     Duration: "Jun 2019 - May 2020 (1 yr)",
     Job: [
       "Took part in the team of managers on the services Bitbucket, Jira, Jenkins, and Nexus",
