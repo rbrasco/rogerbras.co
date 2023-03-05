@@ -82,11 +82,9 @@ const experience = {
     Company: "MLean",
     Position: "Junior DevOps Engineer",
     Duration: `Jul 2022 - Present (${getDateTimeSince(new Date(2022, 6, 1))})`,
-    Challenges: [
+    Job: [
       "Implementation of a cost-saving policy resulted in a 13% reduction in infrastructure costs",
       "Definition of a pipeline for large-scale data migration from EBS AWS to S3 AWS with minimal impact on users",
-    ],
-    Responsibilities: [
       "Oversee successful software deployment for over 80+ clients",
       "Maintain and create new CI/CD Jenkins pipelines",
       "Efficiently manage 400+ EC2 AWS Instances utilizing Ansible",
