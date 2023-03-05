@@ -11,8 +11,7 @@ const line = ({ i, key, label, depth = 0, array = false }) => <div className="li
   <div className={'key_text' + depth}>{key}</div>
   {key === '' ? null : <div className="dots">:</div>}
   {array ? <div className="dash"> - </div> : null}
-  {key.length < 7 ? <div className={isMobile ? 'label_text lt_mobile' : 'label_text'}>{label.includes('.com/') || label.includes('.edu/')? linkTag('http://'+label, label):label}</div>
-    : <div className={isMobile ? 'label_text lt_mobile long' : 'label_text'}>{label.includes('.com/') || label.includes('.edu/')? linkTag('http://'+label, label):label}</div>}
+  {<div className={'label_text' + (isMobile ? ' lt_mobile':'') +(label.length > 7? ' long':'')}>{label.includes('.com/') || label.includes('.edu/')? linkTag('http://'+label, label):label}</div>}
 </div>;
 
 const printLinesDepth = (info, key, depth) =>
