@@ -96,7 +96,7 @@ const experience = {
   Mid: {
     Company: "Shalion",
     Position: "Research & Operations Engineer",
-    Duration: "Feb 2021 - Jul 2022 (1 y 6 mos)",
+    Duration: "Feb 2021 - Jul 2022 (1 yr 6 mos)",
     Job: [
       "Started with an internship and ended up with a permanent contract",
       "Train and mentor remote teams",
