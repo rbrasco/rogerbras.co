@@ -83,7 +83,7 @@ const experience = {
     Position: "Junior DevOps Engineer",
     Duration: `Jul 2022 - Present (${getDateTimeSince(new Date(2022, 6, 1))})`,
     Challenges: [
-      "Implementation of a cost-saving policy resulted in a 13% reduction in infrastructure costs",
+      "Implementation of a cost-saving policy resulting in a 13% reduction in infrastructure costs",
       "Definition of a pipeline for large-scale data migration from EBS AWS to S3 AWS",
     ],
     Responsibilities: [
@@ -95,14 +95,16 @@ const experience = {
   },
   Mid: {
     Company: "Shalion",
-    Position: "Research & Development Engineer",
+    Position: "Research & Operations Engineer",
     Duration: "Feb 2021 - Jul 2022 (1 y 6 mos)",
     Job: [
       "Started with an internship and ended up with a permanent contract",
-      "Define and manage the development of customer product features",
-      "Conduct technical training and mentor the operations team",
-      "Develop process automation scripts for the operations team",
-      "Investigate code bugs",
+      "Train and mentor remote teams",
+      "Manage Kubernetes and monitor daily pod executions",
+      "Handle event-type APIs using AWS SQS",
+      "Configure MiniKube using Terraform for a daily execution setup",
+      "Strong troubleshooter, adept at resolving code bugs efficiently",
+      "Experienced in process automation for enhanced productivity",
     ],
   },
   Low: {
