@@ -17,10 +17,10 @@ const info = {
     "Personal-wise": "Ability to not crack under pressure",
   },
   "Tech stuff": [
-    "C family, Python, Reactjs, and Bash",
-    "AWS Certified Cloud Practioner",
+    "AWS Certified Solutions Architect",
     "Terraform Associate Certified",
-    "Ansible",
+    "Python, JavaScript, Bash, C Family, MySQL",
+    "Git, Jenkins, Ansible, Docker, Kubernetes"
   ],
 };
 
@@ -99,8 +99,8 @@ const experience = {
     Position: "Research & Operations Engineer",
     Duration: "Feb 2021 - Jul 2022 (1 yr 6 mos)",
     Job: [
-      "Transitioned from intern to permanent role, gaining hands-on DevOps experience.",
-      "Trained and mentored remote teams, improving efficiency and skill sets",
+      "Transitioned from intern to permanent role, gaining hands-on DevOps experience",
+      "Trained and mentored remote teams overseas, improving efficiency and skill sets",
       "Proficiently managed Kubernetes, optimizing daily pod executions",
       "Skillfully handled event-type APIs with AWS SQS, ensuring smooth data flow",
       "Configured streamlined MiniKube setup using Terraform",
