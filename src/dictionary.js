@@ -78,10 +78,15 @@ function getDateTimeSince(target) {
 
 const experience = {
   Title: "Work experience by relevance",
+  Current: {
+    Company: "Peaks",
+    Position: "Infrastructure Engineer",
+    Duration: `Dec 2023 - Present (${getDateTimeSince(new Date(2023, 11, 1))})`,
+  },
   Top: {
     Company: "MLean",
     Position: "Junior DevOps Engineer",
-    Duration: `Jul 2022 - Present (${getDateTimeSince(new Date(2022, 6, 1))})`,
+    Duration: "Jul 2022 - Nov 2023 (1 yr 6 mos)",
     Challenges: [
       "Achieved 13% reduction in infrastructure costs through cost-saving policy implementation",
       "Led large-scale data migration from AWS EBS to AWS S3, minimizing user disruptions",
