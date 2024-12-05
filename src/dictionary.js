@@ -19,7 +19,7 @@ const info = {
   "Tech stuff": [
     "AWS Certified Solutions Architect",
     "Terraform Associate Certified",
-    "Python, JavaScript, Bash, C Family, MySQL",
+    "Python, JavaScript, Bash, Golang, MySQL",
     "Git, Jenkins, Ansible, Docker, Kubernetes"
   ],
 };
@@ -101,14 +101,12 @@ const experience = {
   },
   Mid: {
     Company: "Shalion",
-    Position: "Research & Operations Engineer",
+    Position: "Junior Software Engineer",
     Duration: "Feb 2021 - Jul 2022 (1 yr 6 mos)",
     Job: [
-      "Transitioned from intern to permanent role, gaining hands-on DevOps experience",
       "Trained and mentored remote teams overseas, improving efficiency and skill sets",
       "Proficiently managed Kubernetes, optimizing daily pod executions",
-      "Skillfully handled event-type APIs with AWS SQS, ensuring smooth data flow",
-      "Configured streamlined MiniKube setup using Terraform",
+      "Contributed developing a Python scraping bot with event queue architecture",
       "Proven troubleshooter, swiftly resolving code bugs for smooth operations",
       "Demonstrated expertise in process automation, enhancing productivity",
     ],
