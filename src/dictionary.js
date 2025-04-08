@@ -79,11 +79,16 @@ function getDateTimeSince(target) {
 const experience = {
   Title: "Work experience by relevance",
   Current: {
-    Company: "Peaks",
-    Position: "Infrastructure Engineer",
-    Duration: `Dec 2023 - Present (${getDateTimeSince(new Date(2023, 11, 1))})`,
+    Company: "IMC",
+    Position: "Trading Engineer",
+    Duration: `Apr 2025 - Present (${getDateTimeSince(new Date(2025, 3, 1))})`,
   },
   Top: {
+    Company: "Peaks",
+    Position: "Infrastructure Engineer",
+    Duration: `Dec 2023 - Mar 2025 (1 yr 4 mos)`,
+  },
+  Mid: {
     Company: "MLean",
     Position: "Junior DevOps Engineer",
     Duration: "Jul 2022 - Nov 2023 (1 yr 6 mos)",
@@ -99,7 +104,7 @@ const experience = {
       "Utilized Terraform to architect single-tenant infrastructure for 80+ clients",
     ],
   },
-  Mid: {
+  Low: {
     Company: "Shalion",
     Position: "Junior Software Engineer",
     Duration: "Feb 2021 - Jul 2022 (1 yr 6 mos)",
@@ -111,7 +116,7 @@ const experience = {
       "Demonstrated expertise in process automation, enhancing productivity",
     ],
   },
-  Low: {
+  Internships: {
     Company: "Scytl",
     Position: "Software Engineer Internship",
     Duration: "Jun 2019 - May 2020 (1 yr)",
